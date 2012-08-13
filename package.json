@@ -1,0 +1,33 @@
+{
+    "name": "tip",
+    "version": "0.1.0",
+    "root": "#",
+    "description": "",
+    "homepage": "",
+    "author": "",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "bugs": {
+        "url": ""
+    },
+    "license": "",
+    "dependencies": {
+        "jquery": "1.7.2",
+        "popup": "0.9.6"
+    },
+    "devDependencies": {
+        "base": "base/master/base",
+        "overlay": "overlay/master/overlay",
+        "events": "events/master/events",
+        "position": "position/master/position",
+        "iframe-shim": "iframe-shim/master/iframe-shim",
+        "class": "class/master/class",
+        "widget": "widget/master/widget"
+    },
+    "tests": ["tip"],
+    "output": {
+        "tip.js": "."
+    }
+}
