@@ -1,37 +1,43 @@
-<!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Tip</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
-        <link rel="stylesheet" href="http://aralejs.org/assets/base.css" />
-        <link rel="stylesheet" href="http://aralejs.org/assets/style.css" />
-        <link rel="stylesheet" href="http://aralejs.org/assets/pygments.css" />
-        <script src="http://seajs.org/dist/sea.js"></script>
-        
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<title>Tip</title>
+<link rel="stylesheet" href="http://aralejs.org/assets/base.css">
+<link rel="stylesheet" href="http://aralejs.org/assets/style.css">
+
+<script src="http://seajs.org/dist/sea.js"></script>
 <script src="http://aralejs.org/tools/seajs-helper.js"></script>
 
-        <!--[if lt IE 9]>
-        <script type="text/javascript" src="http://aralejs.org/assets/html5shiv.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <header id="header">
-            <h1 id="brand"><a href="http://aralejs.org/">Arale</a></h1>
-            <nav id="nav" role="navigation">
-                <a href="../dist/">Tip</a>
-                <a href="../examples/">Examples</a>
-                
-                
-                <a id="nav-test" target="_blank" href="../tests/runner.html">Tests</a>
-                
-            </nav>
-        </header>
+<!--[if lt IE 9]>
+<script src="http://aralejs.org/assets/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+<header id="header">
+    <div class="container fn-clear">
 
-        <div id="main">
-            <div class="container">
+    <a href="../" >Tip</a>
+    <a href="../examples/" class="current">Examples</a>
+    
+    
+    <a id="nav-test" href="../tests/runner.html">Tests</a>
+    
 
-<p><style>
+
+        <nav role="navigation" id="nav">
+            <a class="icon-home" title="Home" href="/" id="logo">Home</a>
+            <a class="icon-github" href="https://github.com/aralejs/tip">Code</a>
+        </nav>
+    </div>
+</header>
+
+<div id="main">
+    <div class="container">
+
+<div class="markdown-body">
+    <p><style>
 .poptip {
 font:12px/1.5 arial;
 }
@@ -79,7 +85,7 @@ display:none;
 <div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/tip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Tip</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">new</span> <span class="nx">Tip</span><span class="p">({</span>
         <span class="nx">element</span><span class="o">:</span> <span class="s1">&#39;#poptip1&#39;</span><span class="p">,</span>    
-        <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test1&#39;</span><span class="p">,</span>
+        <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test1&#39;</span>
     <span class="p">});</span>
 <span class="p">});</span>
 </pre></div>
@@ -88,7 +94,7 @@ display:none;
 seajs.use(['../src/tip'], function(Tip) {
     new Tip({
         element: '#poptip1',    
-        trigger: '#test1',
+        trigger: '#test1'
     });
 });
 </script>
@@ -272,10 +278,12 @@ seajs.use(['../src/tip'], function(Tip) {
 });
 </script>
 
+</div>
 
-            </div>
-        </div>
-        <hr class="end" />
-        <a id="github" href="https://github.com/aralejs/tip" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:999" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-    </body>
+    </div>
+</div>
+<hr class="end">
+<link rel="stylesheet" href="http://aralejs.org/assets/pygments.css">
+<link rel="stylesheet" href="http://aralejs.org/assets/fontawesome/css/font-awesome.css">
+</body>
 </html>
