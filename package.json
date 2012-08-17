@@ -1,30 +1,21 @@
 {
     "name": "tip",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "root": "#",
-    "description": "",
-    "homepage": "",
-    "author": "",
+    "description": "基础提示框组件，用于带箭头的hover提示框显示和隐藏",
+    "homepage": "http://aralejs.org/tip",
+    "author": "偏右 xingmin.zhu@alipay.com",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/aralejs/tip.git"
     },
     "bugs": {
-        "url": ""
+        "url": "https://github.com/aralejs/tip/issues"
     },
     "license": "",
     "dependencies": {
-        "jquery": "1.7.2",
+        "$": "$",
         "popup": "0.9.6"
-    },
-    "devDependencies": {
-        "base": "base/master/base",
-        "overlay": "overlay/master/overlay",
-        "events": "events/master/events",
-        "position": "position/master/position",
-        "iframe-shim": "iframe-shim/master/iframe-shim",
-        "class": "class/master/class",
-        "widget": "widget/master/widget"
     },
     "tests": ["tip"],
     "output": {
