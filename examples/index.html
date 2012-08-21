@@ -6,8 +6,8 @@
 <title>Tip</title>
 <link rel="stylesheet" href="http://aralejs.org/assets/base.css">
 <link rel="stylesheet" href="http://aralejs.org/assets/style.css">
-
 <script src="http://seajs.org/dist/sea.js"></script>
+
 <script src="http://aralejs.org/tools/seajs-helper.js"></script>
 
 <!--[if lt IE 9]>
@@ -27,8 +27,8 @@
 
 
         <nav role="navigation" id="nav">
-            <a class="icon-home" title="Home" href="/" id="logo">Home</a>
-            <a class="icon-github" href="https://github.com/aralejs/tip">Code</a>
+            <a class="icon-home" target="_blank" title="Home" href="/" id="logo">Home</a>
+            <a id="code-link" class="icon-github" target="_blank" href="https://github.com/aralejs/tip">Code</a>
         </nav>
     </div>
 </header>
@@ -55,10 +55,10 @@ overflow:hidden;
 display:none;
 }
 .ui-tiptext-container * {
-    font-size:12px;
-    margin:0;
-    padding:0;
-    line-height:1.5;
+font-size:12px;
+margin:0;
+padding:0;
+line-height:1.5;
 }
 </style>
 <link rel="stylesheet" href="http://dev.assets.alipay.net/al/alice.components.ui-poptip-1.1-SNAPSHOT-src.css" type="text/css" media="screen" charset="utf-8">
@@ -82,22 +82,22 @@ display:none;
     </div>
     </div>
 </div>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/tip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Tip</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">new</span> <span class="nx">Tip</span><span class="p">({</span>
-        <span class="nx">element</span><span class="o">:</span> <span class="s1">&#39;#poptip1&#39;</span><span class="p">,</span>    
-        <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test1&#39;</span>
-    <span class="p">});</span>
-<span class="p">});</span>
-</pre></div>
 
-<script type="text/javascript">
-seajs.use(['../src/tip'], function(Tip) {
+<script>
+seajs.use(['tip'], function(Tip) {
     new Tip({
         element: '#poptip1',    
         trigger: '#test1'
     });
 });
 </script>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;tip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Tip</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">new</span> <span class="nx">Tip</span><span class="p">({</span>
+        <span class="nx">element</span><span class="o">:</span> <span class="s1">&#39;#poptip1&#39;</span><span class="p">,</span>    
+        <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test1&#39;</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
 
 <div class="cell">
     <p id="test2">鼠标移上来试试(下)</p>
@@ -117,17 +117,9 @@ seajs.use(['../src/tip'], function(Tip) {
     </div>
     </div>
 </div>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/tip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Tip</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">new</span> <span class="nx">Tip</span><span class="p">({</span>
-        <span class="nx">element</span><span class="o">:</span> <span class="s1">&#39;#poptip2&#39;</span><span class="p">,</span>
-        <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test2&#39;</span><span class="p">,</span>
-        <span class="nx">direction</span><span class="o">:</span> <span class="s1">&#39;down&#39;</span>
-    <span class="p">});</span>
-<span class="p">});</span>
-</pre></div>
 
-<script type="text/javascript">
-seajs.use(['../src/tip'], function(Tip) {
+<script>
+seajs.use(['tip'], function(Tip) {
     new Tip({
         element: '#poptip2',
         trigger: '#test2',
@@ -135,6 +127,14 @@ seajs.use(['../src/tip'], function(Tip) {
     });
 });
 </script>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;tip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Tip</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">new</span> <span class="nx">Tip</span><span class="p">({</span>
+        <span class="nx">element</span><span class="o">:</span> <span class="s1">&#39;#poptip2&#39;</span><span class="p">,</span>
+        <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test2&#39;</span><span class="p">,</span>
+        <span class="nx">direction</span><span class="o">:</span> <span class="s1">&#39;down&#39;</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
 
 <div class="cell">
     <p id="test3">鼠标移上来试试(右)</p>
@@ -154,18 +154,9 @@ seajs.use(['../src/tip'], function(Tip) {
     </div>
     </div>
 </div>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/tip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Tip</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">new</span> <span class="nx">Tip</span><span class="p">({</span>
-        <span class="nx">element</span><span class="o">:</span> <span class="s1">&#39;#poptip3&#39;</span><span class="p">,</span>
-        <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test3&#39;</span><span class="p">,</span>
-        <span class="nx">direction</span><span class="o">:</span> <span class="s1">&#39;right&#39;</span><span class="p">,</span>
-        <span class="nx">arrowShift</span><span class="o">:</span> <span class="mi">20</span>
-    <span class="p">});</span>
-<span class="p">});</span>
-</pre></div>
 
-<script type="text/javascript">
-seajs.use(['../src/tip'], function(Tip) {
+<script>
+seajs.use(['tip'], function(Tip) {
     new Tip({
         element: '#poptip3',
         trigger: '#test3',
@@ -174,6 +165,15 @@ seajs.use(['../src/tip'], function(Tip) {
     });
 });
 </script>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;tip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Tip</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">new</span> <span class="nx">Tip</span><span class="p">({</span>
+        <span class="nx">element</span><span class="o">:</span> <span class="s1">&#39;#poptip3&#39;</span><span class="p">,</span>
+        <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test3&#39;</span><span class="p">,</span>
+        <span class="nx">direction</span><span class="o">:</span> <span class="s1">&#39;right&#39;</span><span class="p">,</span>
+        <span class="nx">arrowShift</span><span class="o">:</span> <span class="mi">20</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
 
 <div class="cell">
     <p id="test4">鼠标移上来试试(左)</p>
@@ -193,18 +193,9 @@ seajs.use(['../src/tip'], function(Tip) {
     </div>
     </div>
 </div>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/tip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Tip</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">new</span> <span class="nx">Tip</span><span class="p">({</span>
-        <span class="nx">element</span><span class="o">:</span> <span class="s1">&#39;#poptip4&#39;</span><span class="p">,</span>
-        <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test4&#39;</span><span class="p">,</span>
-        <span class="nx">direction</span><span class="o">:</span> <span class="s1">&#39;left&#39;</span><span class="p">,</span>
-        <span class="nx">arrowShift</span><span class="o">:</span> <span class="mi">20</span>
-    <span class="p">});</span>
-<span class="p">});</span>
-</pre></div>
 
-<script type="text/javascript">
-seajs.use(['../src/tip'], function(Tip) {
+<script>
+seajs.use(['tip'], function(Tip) {
     new Tip({
         element: '#poptip4',
         trigger: '#test4',
@@ -213,6 +204,15 @@ seajs.use(['../src/tip'], function(Tip) {
     });
 });
 </script>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;tip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Tip</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">new</span> <span class="nx">Tip</span><span class="p">({</span>
+        <span class="nx">element</span><span class="o">:</span> <span class="s1">&#39;#poptip4&#39;</span><span class="p">,</span>
+        <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test4&#39;</span><span class="p">,</span>
+        <span class="nx">direction</span><span class="o">:</span> <span class="s1">&#39;left&#39;</span><span class="p">,</span>
+        <span class="nx">arrowShift</span><span class="o">:</span> <span class="mi">20</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
 
 <div class="cell">
     <p id="test5">别的tip(上)</p>
@@ -225,18 +225,9 @@ seajs.use(['../src/tip'], function(Tip) {
     </div>
     <p class="ui-tiptext ui-tiptext-message"><span class="ui-tiptext-icon"></span>此服务支付宝不收取任何费用。</p>
 </div>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/tip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Tip</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">new</span> <span class="nx">Tip</span><span class="p">({</span>
-        <span class="nx">element</span><span class="o">:</span> <span class="s1">&#39;#poptip5&#39;</span><span class="p">,</span>
-        <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test5&#39;</span><span class="p">,</span>
-        <span class="nx">direction</span><span class="o">:</span> <span class="s1">&#39;up&#39;</span><span class="p">,</span>
-        <span class="nx">arrowShift</span><span class="o">:</span> <span class="mi">40</span>
-    <span class="p">});</span>
-<span class="p">});</span>
-</pre></div>
 
-<script type="text/javascript">
-seajs.use(['../src/tip'], function(Tip) {
+<script>
+seajs.use(['tip'], function(Tip) {
     new Tip({
         element: '#poptip5',
         trigger: '#test5',
@@ -245,6 +236,15 @@ seajs.use(['../src/tip'], function(Tip) {
     });
 });
 </script>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;tip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Tip</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">new</span> <span class="nx">Tip</span><span class="p">({</span>
+        <span class="nx">element</span><span class="o">:</span> <span class="s1">&#39;#poptip5&#39;</span><span class="p">,</span>
+        <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test5&#39;</span><span class="p">,</span>
+        <span class="nx">direction</span><span class="o">:</span> <span class="s1">&#39;up&#39;</span><span class="p">,</span>
+        <span class="nx">arrowShift</span><span class="o">:</span> <span class="mi">40</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
 
 <div class="cell">
     <p id="test6">别的tip(下)</p>
@@ -257,7 +257,18 @@ seajs.use(['../src/tip'], function(Tip) {
     </div>
     <p class="ui-tiptext ui-tiptext-warning"><span class="ui-tiptext-icon"></span>此服务支付宝不收取任何费用。</p>
 </div>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/tip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Tip</span><span class="p">)</span> <span class="p">{</span>
+
+<script>
+seajs.use(['tip'], function(Tip) {
+    new Tip({
+        element: '#poptip6',
+        trigger: '#test6',
+        direction: 'down',
+        arrowShift: 40
+    });
+});
+</script>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;tip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Tip</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">new</span> <span class="nx">Tip</span><span class="p">({</span>
         <span class="nx">element</span><span class="o">:</span> <span class="s1">&#39;#poptip6&#39;</span><span class="p">,</span>
         <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test6&#39;</span><span class="p">,</span>
@@ -267,17 +278,6 @@ seajs.use(['../src/tip'], function(Tip) {
 <span class="p">});</span>
 </pre></div>
 
-<script type="text/javascript">
-seajs.use(['../src/tip'], function(Tip) {
-    new Tip({
-        element: '#poptip6',
-        trigger: '#test6',
-        direction: 'down',
-        arrowShift: 40
-    });
-});
-</script>
-
 </div>
 
     </div>
@@ -285,5 +285,8 @@ seajs.use(['../src/tip'], function(Tip) {
 <hr class="end">
 <link rel="stylesheet" href="http://aralejs.org/assets/pygments.css">
 <link rel="stylesheet" href="http://aralejs.org/assets/fontawesome/css/font-awesome.css">
+<script>
+    seajs.use('http://aralejs.org/tools/nico-helper.js');
+</script>
 </body>
 </html>
