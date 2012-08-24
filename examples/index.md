@@ -17,9 +17,12 @@ display:none;
 }
 .ui-tiptext-container * {
 font-size:12px;
-margin:0;
-padding:0;
+margin:0!important;
+padding:0!important;
 line-height:1.5;
+}
+.ui-tiptext p {
+margin:0;
 }
 </style>
 <link rel="stylesheet" href="http://dev.assets.alipay.net/al/alice.components.ui-poptip-1.1-SNAPSHOT-src.css" type="text/css" media="screen" charset="utf-8">
