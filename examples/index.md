@@ -5,6 +5,7 @@ font:12px/1.5 arial;
 .cell {
 overflow:hidden;
 margin-bottom:20px;
+margin-left:100px;
 }
 .cell p {
 float:left;
@@ -138,6 +139,37 @@ seajs.use(['tip'], function(Tip) {
         trigger: '#test4',
         direction: 'left',
         arrowShift: 20
+    });
+});
+````
+
+<div class="cell">
+    <p id="test4-1">点击打开Tip(下)</p>
+</div>
+
+<div class="ui-poptip fn-hide" id="poptip4-1">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">
+        <div class="ui-poptip-arrow ui-poptip-arrow-5">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            <div>我是下方的tip</div>
+            <div>我是下方的tip</div>
+        </div>
+    </div>
+    </div>
+</div>
+
+````javascript
+seajs.use(['tip'], function(Tip) {
+    new Tip({
+        element: '#poptip4-1',
+        trigger: '#test4-1',
+        triggerType: 'click',
+        direction: 'up',
+        arrowShift: -20
     });
 });
 ````

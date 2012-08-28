@@ -15,7 +15,7 @@
     "license": "",
     "dependencies": {
         "$": "$",
-        "popup": "0.9.6"
+        "popup": "0.9.7"
     },
     "tests": ["tip"],
     "output": {

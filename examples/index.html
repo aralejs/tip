@@ -47,6 +47,7 @@ font:12px/1.5 arial;
 .cell {
 overflow:hidden;
 margin-bottom:20px;
+margin-left:100px;
 }
 .cell p {
 float:left;
@@ -213,6 +214,47 @@ seajs.use(['tip'], function(Tip) {
         <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test4&#39;</span><span class="p">,</span>
         <span class="nx">direction</span><span class="o">:</span> <span class="s1">&#39;left&#39;</span><span class="p">,</span>
         <span class="nx">arrowShift</span><span class="o">:</span> <span class="mi">20</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
+
+<div class="cell">
+    <p id="test4-1">点击打开Tip(下)</p>
+</div>
+
+<div class="ui-poptip fn-hide" id="poptip4-1">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">
+        <div class="ui-poptip-arrow ui-poptip-arrow-5">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content">
+            <div>我是下方的tip</div>
+            <div>我是下方的tip</div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script>
+seajs.use(['tip'], function(Tip) {
+    new Tip({
+        element: '#poptip4-1',
+        trigger: '#test4-1',
+        triggerType: 'click',
+        direction: 'up',
+        arrowShift: -20
+    });
+});
+</script>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;tip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Tip</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">new</span> <span class="nx">Tip</span><span class="p">({</span>
+        <span class="nx">element</span><span class="o">:</span> <span class="s1">&#39;#poptip4-1&#39;</span><span class="p">,</span>
+        <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test4-1&#39;</span><span class="p">,</span>
+        <span class="nx">triggerType</span><span class="o">:</span> <span class="s1">&#39;click&#39;</span><span class="p">,</span>
+        <span class="nx">direction</span><span class="o">:</span> <span class="s1">&#39;up&#39;</span><span class="p">,</span>
+        <span class="nx">arrowShift</span><span class="o">:</span> <span class="o">-</span><span class="mi">20</span>
     <span class="p">});</span>
 <span class="p">});</span>
 </pre></div>
