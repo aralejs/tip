@@ -10,9 +10,8 @@
 
 ## 模块依赖
 
- - seajs
  - jquery
- - popup
+ - [popup](../popup/)
 
 
 ## 配置说明
