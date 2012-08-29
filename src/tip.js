@@ -1,6 +1,6 @@
 define(function(require, exports, module) {
 
-    var $ = require('jquery'),
+    var $ = require('$'),
         Popup = require('popup');
 
     // 通用提示组件

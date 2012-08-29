@@ -1,7 +1,7 @@
-define("#tip/0.9.0/tip-debug", ["undefined-debug", "#popup/0.9.6/popup-debug", "$-debug", "#overlay/0.9.9/overlay-debug", "#iframe-shim/0.9.3/iframe-shim-debug", "#position/0.9.2/position-debug", "#widget/0.9.16/widget-debug", "#base/0.9.16/base-debug", "#events/0.9.1/events-debug", "#class/0.9.2/class-debug"], function(require, exports, module) {
+define("#tip/0.9.0/tip-debug", ["$-debug", "#popup/0.9.7/popup-debug", "#overlay/0.9.9/overlay-debug", "#position/1.0.0/position-debug", "#iframe-shim/1.0.0/iframe-shim-debug", "#widget/1.0.0/widget-debug", "#base/1.0.0/base-debug", "#class/1.0.0/class-debug", "#events/1.0.0/events-debug"], function(require, exports, module) {
 
-    var $ = require('undefined-debug'),
-        Popup = require('#popup/0.9.6/popup-debug');
+    var $ = require('$-debug'),
+        Popup = require('#popup/0.9.7/popup-debug');
 
     // 通用提示组件
     // 兼容站内各类样式
