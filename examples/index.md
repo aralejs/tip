@@ -37,7 +37,7 @@ line-height:1.5;
             <em>◆</em>
             <span>◆</span>
         </div>                  
-        <div class="ui-poptip-content">
+        <div class="ui-poptip-content" data-role="content">
             <div>我是上方的tip</div>
             <div>我是上方的tip</div>            
         </div>
@@ -65,7 +65,7 @@ seajs.use(['tip'], function(Tip) {
             <em>◆</em>
             <span>◆</span>
         </div>                  
-        <div class="ui-poptip-content">
+        <div class="ui-poptip-content" data-role="content">
             <div>我是下方的tip</div>
             <div>我是下方的tip</div>       
         </div>
@@ -94,7 +94,7 @@ seajs.use(['tip'], function(Tip) {
             <em>◆</em>
             <span>◆</span>
         </div>                  
-        <div class="ui-poptip-content">
+        <div class="ui-poptip-content" data-role="content">
             <div>我是右方的tip</div>
             <div>我是右方的tip</div>
         </div>
@@ -124,7 +124,7 @@ seajs.use(['tip'], function(Tip) {
             <em>◆</em>
             <span>◆</span>
         </div>
-        <div class="ui-poptip-content">
+        <div class="ui-poptip-content" data-role="content">
             <div>我是左方的tip</div>
             <div>我是左方的tip</div>
         </div>
@@ -154,7 +154,7 @@ seajs.use(['tip'], function(Tip) {
             <em>◆</em>
             <span>◆</span>
         </div>
-        <div class="ui-poptip-content">
+        <div class="ui-poptip-content" data-role="content">
             <div>我是下方的tip</div>
             <div>我是下方的tip</div>
         </div>

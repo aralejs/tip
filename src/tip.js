@@ -8,9 +8,6 @@ define(function(require, exports, module) {
     var Tip = Popup.extend({
         
         attrs: {
-            // 提示内容节点
-            contentElement: '',
-
             // 提示内容
             content: '',
 
@@ -63,11 +60,11 @@ define(function(require, exports, module) {
         // 用于 set 属性后的界面更新
 
         _onRenderContent: function(val) {
-            var ctn = this.get('contentElement');
+            var ctn = this.$('[data-role=content]');
             if (typeof val !== 'string') { 
                 val = val.call(this);
             }
-            ctn && this.$(ctn).html(val);
+            ctn && ctn.html(val);
         }
 
     });
