@@ -60,7 +60,7 @@ define("#tip/0.9.0/tip-debug", ["$-debug", "#popup/0.9.7/popup-debug", "#overlay
         // 用于 set 属性后的界面更新
 
         _onRenderContent: function(val) {
-            var ctn = this.$('[data-role=content]');
+            var ctn = this.$('[data-role="content"]');
             if (typeof val !== 'string') { 
                 val = val.call(this);
             }

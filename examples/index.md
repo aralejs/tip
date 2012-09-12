@@ -30,6 +30,7 @@ line-height:1.5;
     <p id="test1">鼠标移上来试试(上)</p>
 </div>
 
+<div class="examples">
 <div class="ui-poptip fn-hide" id="poptip1">
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
@@ -43,6 +44,7 @@ line-height:1.5;
         </div>
     </div>
     </div>
+</div>
 </div>
 
 ````javascript
@@ -58,6 +60,7 @@ seajs.use(['tip'], function(Tip) {
     <p id="test2">鼠标移上来试试(下)</p>
 </div>
 
+<div class="examples">
 <div class="ui-poptip fn-hide" id="poptip2">
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
@@ -72,6 +75,7 @@ seajs.use(['tip'], function(Tip) {
     </div>
     </div>
 </div>
+</div>
 
 ````javascript
 seajs.use(['tip'], function(Tip) {
@@ -79,7 +83,7 @@ seajs.use(['tip'], function(Tip) {
         element: '#poptip2',
         trigger: '#test2',
         direction: 'down'
-    });
+    }).set('content', '我是下方的tip(改动内容了)');
 });
 ````
 
@@ -87,6 +91,7 @@ seajs.use(['tip'], function(Tip) {
     <p id="test3">鼠标移上来试试(右)</p>
 </div>
 
+<div class="examples">
 <div class="ui-poptip fn-hide" id="poptip3">
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
@@ -100,6 +105,7 @@ seajs.use(['tip'], function(Tip) {
         </div>
     </div>
     </div>
+</div>
 </div>
 
 ````javascript
@@ -117,6 +123,7 @@ seajs.use(['tip'], function(Tip) {
     <p id="test4">鼠标移上来试试(左)</p>
 </div>
 
+<div class="examples">
 <div class="ui-poptip fn-hide" id="poptip4">
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
@@ -130,6 +137,7 @@ seajs.use(['tip'], function(Tip) {
         </div>
     </div>
     </div>
+</div>
 </div>
 
 ````javascript
@@ -147,6 +155,7 @@ seajs.use(['tip'], function(Tip) {
     <p id="test4-1">点击打开Tip(下)</p>
 </div>
 
+<div class="examples">
 <div class="ui-poptip fn-hide" id="poptip4-1">
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
@@ -160,6 +169,7 @@ seajs.use(['tip'], function(Tip) {
         </div>
     </div>
     </div>
+</div>
 </div>
 
 ````javascript
@@ -178,12 +188,14 @@ seajs.use(['tip'], function(Tip) {
     <p id="test5">别的tip(上)</p>
 </div>
 
+<div class="examples">
 <div id="poptip5" class="ui-tiptext-container ui-tiptext-container-message fn-hide">
     <div class="ui-tiptext-arrow ui-tiptext-arrowdown">
         <em>◆</em>
         <span>◆</span>
     </div>
     <p class="ui-tiptext ui-tiptext-message"><span class="ui-tiptext-icon"></span>此服务支付宝不收取任何费用。</p>
+</div>
 </div>
 
 ````javascript
@@ -201,12 +213,14 @@ seajs.use(['tip'], function(Tip) {
     <p id="test6">别的tip(下)</p>
 </div>
 
+<div class="examples">
 <div id="poptip6" class="ui-tiptext-container ui-tiptext-container-warning fn-hide">
     <div class="ui-tiptext-arrow ui-tiptext-arrowup">
         <em>◆</em>
         <span>◆</span>
     </div>
     <p class="ui-tiptext ui-tiptext-warning"><span class="ui-tiptext-icon"></span>此服务支付宝不收取任何费用。</p>
+</div>
 </div>
 
 ````javascript
