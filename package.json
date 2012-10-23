@@ -20,7 +20,7 @@
     },
     "tests": ["tip"],
     "output": {
-        "tip.js": "tip.js",
-        "atip.js": "atip.js"
+        "tip.js": ["tip.js"],
+        "atip.js": ["atip.js"]
     }
 }
