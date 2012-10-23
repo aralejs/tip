@@ -1,11 +1,11 @@
 {
     "name": "tip",
-    "version": "0.9.1",
+    "version": "0.9.2",
     "root": "#",
     "tag": "widget",
-    "description": "基础提示框组件，用于带箭头的hover提示框显示和隐藏",
+    "description": "基础提示框组件，用于带箭头的 hover 提示框显示和隐藏。",
     "homepage": "http://aralejs.org/tip",
-    "author": "偏右 xingmin.zhu@alipay.com",
+    "author": "偏右 <xingmin.zhu@alipay.com>",
     "repository": {
         "type": "git",
         "url": "https://github.com/aralejs/tip.git"
@@ -16,10 +16,11 @@
     "license": "",
     "dependencies": {
         "$": "$",
-        "popup": "0.9.8"
+        "popup": "0.9.9"
     },
     "tests": ["tip"],
     "output": {
-        "tip.js": "."
+        "tip.js": "tip.js",
+        "atip.js": "atip.js"
     }
 }

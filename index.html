@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-<title>Tip</title>
-<link rel="stylesheet" href="http://aralejs.org/assets/base.css">
-<link rel="stylesheet" href="http://aralejs.org/assets/style.css">
-<link rel="stylesheet" href="http://aralejs.org/assets/pygments.css">
-<script src="http://seajs.org/dist/sea.js"></script>
-<script src="http://aralejs.org/tools/seajs-helper.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Tip</title><link rel="stylesheet" href="http://alipay.github.com/liquidluck-theme-arale/assets/app.min.css">
+    <link rel="shortcut icon" href="http://alipay.github.com/liquidluck-theme-arale/assets/favicon.ico" type="image/x-icon" />
+    <script src="http://seajs.org/dist/sea.js"></script>
+    <script src="http://alipay.github.com/liquidluck-theme-arale/tools/arale-helper.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://alipay.github.com/liquidluck-theme-arale/assets/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <a title="Home" class="icon-home" href="/" id="logo">Arale</a>
+        <div class="wrapper fn-clear">
+          
+          <nav class="global-nav" role="navigation">
+            <ul class="fn-clear">
+              <li class="developer-guides"><a href="/developer-guides/">开发指南</a></li>
+              <li class="user-guides"><a href="/components/">组件文档</a> • <a style="padding-left:0;" href="/mapping.html">Map</a></li>
+            </ul>
+          </nav>
+          <nav class="top-nav" role="navigation">
+            <ul class="fn-clear">
+              <li class="first"><a target="_blank" href="http://seajs.org">SeaJS</a></li>
+              <li class="last"><a target="_blank" href="https://github.com/seajs/spm/wiki">SPM</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+      </div>
+    </header>
 
-
-<!--[if lt IE 9]>
-<script src="http://aralejs.org/assets/html5shiv.js"></script>
-<![endif]-->
-</head>
-<body>
-<header id="header">
-    <div class="container fn-clear">
-
-    <a href="./"  class="current">Tip</a>
-    <a href="./examples/" >演示</a>
-    
-    
-    <a id="nav-test" href="./tests/runner.html">用例</a>
-    
-
-
-        <nav role="navigation" id="nav">
-            <a title="Home" class="icon-home" href="/" id="logo">首页</a>
-            <a id="code-link" class="icon-github" href="https://github.com/aralejs/tip">源码</a>
-        </nav>
-    </div>
-</header>
-
-<div id="main">
-    <div class="container">
-<div class="document-body">
+    <div id="main">
+      <div class="container fn-clear">
+<div class="markdown-body">
+  <h1 class="entry-title">Tip</h1>
+  <div class="other-info">
+    <a href="history.html">历史</a>
+    <a target="_blank" href="https://github.com/aralejs/tip/">源码</a>
+  </div>
+  <p class="entry-description">基础提示框组件，用于带箭头的 hover 提示框显示和隐藏。</p>
+  <p class="entry-cdn" data-name="tip"></p>
   
+  <hr />
 
-  <div class="markdown-body">
-    <h1>Tip</h1>
-<p>基础提示框组件，用于带箭头的hover提示框显示和隐藏。</p>
-<p>本组件不和具体dom结构和样式绑定，若想使用封装好的tip组件，可以试试<a href="http://arale2.alipay.im/alipay_atip/">alipay.atip</a>。</p>
-
-<hr/>
-
-<h2>模块依赖</h2>
-
+  
+<h2>演示</h2>
 <ul>
-<li>jquery</li>
-<li><a href="../popup/">popup</a></li>
+  <li><a href="./examples/">Tip 演示</a></li>
+  <li><a href="./examples/atip.html">Atip 演示（默认样式和结构）</a></li>
 </ul>
-
-<h2>配置说明</h2>
+<h2>文档</h2>
+<ul>
+  <li><a href="./docs/atip.html">Atip 使用文档</a></li>
+</ul><h2 id="toc_0">API</h2>
 
 <ul>
-<li><p><code>contentElement</code> {element|string} </p>
-<p>提示内容节点。</p></li>
 <li><p><code>content</code> {string|function}</p>
-<p>提示内容。</p></li>
+<p>提示内容，使用 <code>data-role=&quot;content&quot;</code> 标示内容节点。</p></li>
 <li><p><code>direction</code> {string}</p>
 <p>提示框在目标的位置方向，可选<code>up|down|left|right</code>。</p></li>
 <li><p><code>distance</code> {number}</p>
@@ -69,7 +70,9 @@
 </ul>
 <p>其他配置请参考模块<a href="../popup/">popup</a>的配置。</p>
 
-<h2>最佳实践</h2>
+<h2 id="toc_1">最佳实践</h2>
+<p>本组件不和具体结构依赖，可以自由和各种 dom 结构进行搭配，需要在页面上自己写 html。</p>
+<p>若想直接使用带箭头的Tip，可以试试上面演示中的 Atip。</p>
 <p>本组件推荐和<a href="http://arale.alipay.im/projects/4ee06eabb5f7002877019198">alice.components.ui-poptip</a>或<a href="http://arale.alipay.im/projects/4ffbc0e6f137f3a16a23b1c9">alice.components.ui-tiptext</a>等配合使用，用<code>direction</code>属性来控制提示框出现的位置，用<code>arrowShift</code>属性来调节箭头的偏移。</p>
 
 <pre><code>&lt;p id=&quot;test&quot;&gt;鼠标移上来试试&lt;/p&gt;
@@ -81,7 +84,7 @@
             &lt;em&gt;◆&lt;/em&gt;
             &lt;span&gt;◆&lt;/span&gt;
         &lt;/div&gt;                  
-        &lt;div class=&quot;ui-poptip-content&quot;&gt;
+        &lt;div class=&quot;ui-poptip-content&quot; data-role=&quot;content&quot;&gt;
             &lt;div&gt;我是上方的tip&lt;/div&gt;
             &lt;div&gt;我是上方的tip&lt;/div&gt;            
         &lt;/div&gt;
@@ -100,17 +103,25 @@ seajs.use(['../src/tip'], function(Tip) {
 });
 &lt;/script&gt;</code></pre>
 
-<h2>交流讨论</h2>
-<p>欢迎创建
-<a href="http://git.alipay.im/tip/issues/new">Gitlab Issue</a>
-来提交反馈。</p>
 
-  </div>
+  <h2>用例</h2>
+  <p><a href="./tests/runner.html">测试用例</a></p>
+
+  <h2>讨论</h2>
+  <p>有任何疑问，欢迎发送邮件到 <a href="https://groups.google.com/forum/?fromgroups#!forum/aralejs">aralejs@googlegroups.com</a></p>
+  <p>发现 bug？请提交 <a href="https://github.com/aralejs/tip/issues/new">Issue</a></p>
 </div>
-
+<div class="sidebar sidebar-components"></div>
+      </div>
     </div>
-</div>
-<hr class="end">
-<script src="http://aralejs.org/tools/nico-helper.js"></script>
-</body>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          <p>&copy; 2012 aralejs.org</p>
+          <p>除非另有声明，本站所有代码遵循 MIT 协议</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

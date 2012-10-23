@@ -1,3 +1,9 @@
+# Tip 演示
+
+- order: 1
+
+---
+
 <style>
 .poptip {
 font:12px/1.5 arial;
@@ -23,8 +29,8 @@ padding:0!important;
 line-height:1.5;
 }
 </style>
-<link rel="stylesheet" href="http://dev.assets.alipay.net/al/alice.components.ui-poptip-1.1-SNAPSHOT-src.css" type="text/css" media="screen" charset="utf-8">
-<link rel="stylesheet" href="http://dev.assets.alipay.net/al/alice.components.ui-tiptext-1.3-SNAPSHOT-src.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="http://dev.assets.alipay.net/al/alice.components.ui-poptip-1.2-SNAPSHOT-src.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="http://dev.assets.alipay.net/al/alice.components.ui-tiptext-1.3-src.css" type="text/css" media="screen" charset="utf-8">
 
 <div class="cell">
     <p id="test1">鼠标移上来试试(上)</p>
