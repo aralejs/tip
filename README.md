@@ -35,6 +35,8 @@
 
 本组件推荐和[alice.components.ui-poptip](http://arale.alipay.im/projects/4ee06eabb5f7002877019198)或[alice.components.ui-tiptext](http://arale.alipay.im/projects/4ffbc0e6f137f3a16a23b1c9)等配合使用，用`direction`属性来控制提示框出现的位置，用`arrowShift`属性来调节箭头的偏移。
 
+下面是一个简单示例。
+
 ```
 <p id="test">鼠标移上来试试</p>
 
