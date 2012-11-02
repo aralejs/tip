@@ -28,6 +28,9 @@ margin:0!important;
 padding:0!important;
 line-height:1.5;
 }
+em {
+font-style: normal;
+}
 </style>
 <link rel="stylesheet" href="https://a.alipayobjects.com/al/alice.components.ui-poptip-1.1-src.css" type="text/css" media="screen" charset="utf-8">
 <link rel="stylesheet" href="https://a.alipayobjects.com/al/alice.components.ui-tiptext-1.3-src.css" type="text/css" media="screen" charset="utf-8">
@@ -54,7 +57,7 @@ line-height:1.5;
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
+seajs.use(['../src/tip'], function(Tip) {
     new Tip({
         element: '#poptip1',    
         trigger: '#test1'
@@ -84,7 +87,7 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
+seajs.use(['../src/tip'], function(Tip) {
     new Tip({
         element: '#poptip2',
         trigger: '#test2',
@@ -115,7 +118,7 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
+seajs.use(['../src/tip'], function(Tip) {
     new Tip({
         element: '#poptip3',
         trigger: '#test3',
@@ -147,7 +150,7 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
+seajs.use(['../src/tip'], function(Tip) {
     new Tip({
         element: '#poptip4',
         trigger: '#test4',
@@ -179,7 +182,7 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
+seajs.use(['../src/tip'], function(Tip) {
     new Tip({
         element: '#poptip4-1',
         trigger: '#test4-1',
@@ -205,7 +208,7 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
+seajs.use(['../src/tip'], function(Tip) {
     new Tip({
         element: '#poptip5',
         trigger: '#test5',
@@ -230,7 +233,7 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
+seajs.use(['../src/tip'], function(Tip) {
     new Tip({
         element: '#poptip6',
         trigger: '#test6',

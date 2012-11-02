@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <title>Tip - Atip 演示（默认样式和结构，更漂亮的 API）</title><link rel="stylesheet" href="http://alipay.github.com/liquidluck-theme-arale/assets/app.min.css">
     <link rel="shortcut icon" href="http://alipay.github.com/liquidluck-theme-arale/assets/favicon.ico" type="image/x-icon" />
-    <script src="http://seajs.org/dist/sea.js"></script>
+    <script src="https://a.alipayobjects.com/static/arale/seajs/1.2.1/sea.js"></script>
     <script src="http://alipay.github.com/liquidluck-theme-arale/tools/arale-helper.js"></script>
     <!--[if lt IE 9]>
       <script src="http://alipay.github.com/liquidluck-theme-arale/assets/html5shiv.js"></script>
@@ -52,6 +52,9 @@ padding:10px;
 background-color:#e80;
 overflow:hidden;
 }
+em {
+font-style: normal;
+}
 </style>
 <link rel="stylesheet" href="https://a.alipayobjects.com/al/alice.components.ui-poptip-1.1-src.css" type="text/css" media="screen" charset="utf-8"></p>
 
@@ -60,7 +63,7 @@ overflow:hidden;
 </div>
 
 <script>
-seajs.use(['atip'], function(Atip) {
+seajs.use(['../src/atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test',
         content: '<div style="padding:10px">我是内容</div>',
@@ -68,7 +71,7 @@ seajs.use(['atip'], function(Atip) {
     });
 });
 </script>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Atip</span><span class="p">({</span>
         <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test&#39;</span><span class="p">,</span>
         <span class="nx">content</span><span class="o">:</span> <span class="s1">&#39;&lt;div style=&quot;padding:10px&quot;&gt;我是内容&lt;/div&gt;&#39;</span><span class="p">,</span>
@@ -82,7 +85,7 @@ seajs.use(['atip'], function(Atip) {
 </div>
 
 <script>
-seajs.use(['atip'], function(Atip) {
+seajs.use(['../src/atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test2',
         content: '<div style="padding:10px">我是内容</div>',
@@ -91,7 +94,7 @@ seajs.use(['atip'], function(Atip) {
     });
 });
 </script>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Atip</span><span class="p">({</span>
         <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test2&#39;</span><span class="p">,</span>
         <span class="nx">content</span><span class="o">:</span> <span class="s1">&#39;&lt;div style=&quot;padding:10px&quot;&gt;我是内容&lt;/div&gt;&#39;</span><span class="p">,</span>
@@ -106,7 +109,7 @@ seajs.use(['atip'], function(Atip) {
 </div>
 
 <script>
-seajs.use(['atip'], function(Atip) {
+seajs.use(['../src/atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test3',
         content: '<div style="padding:10px">我是内容</div>',
@@ -114,7 +117,7 @@ seajs.use(['atip'], function(Atip) {
     });
 });
 </script>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Atip</span><span class="p">({</span>
         <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test3&#39;</span><span class="p">,</span>
         <span class="nx">content</span><span class="o">:</span> <span class="s1">&#39;&lt;div style=&quot;padding:10px&quot;&gt;我是内容&lt;/div&gt;&#39;</span><span class="p">,</span>
@@ -128,7 +131,7 @@ seajs.use(['atip'], function(Atip) {
 </div>
 
 <script>
-seajs.use(['atip'], function(Atip) {
+seajs.use(['../src/atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test4',
         content: '<div style="padding:10px">我是内容</div>',
@@ -136,7 +139,7 @@ seajs.use(['atip'], function(Atip) {
     });
 });
 </script>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Atip</span><span class="p">({</span>
         <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test4&#39;</span><span class="p">,</span>
         <span class="nx">content</span><span class="o">:</span> <span class="s1">&#39;&lt;div style=&quot;padding:10px&quot;&gt;我是内容&lt;/div&gt;&#39;</span><span class="p">,</span>
@@ -150,7 +153,7 @@ seajs.use(['atip'], function(Atip) {
 </div>
 
 <script>
-seajs.use(['atip'], function(Atip) {
+seajs.use(['../src/atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test5',
         content: '<div style="padding:10px">我是内容</div>',
@@ -158,7 +161,7 @@ seajs.use(['atip'], function(Atip) {
     });
 });
 </script>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Atip</span><span class="p">({</span>
         <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test5&#39;</span><span class="p">,</span>
         <span class="nx">content</span><span class="o">:</span> <span class="s1">&#39;&lt;div style=&quot;padding:10px&quot;&gt;我是内容&lt;/div&gt;&#39;</span><span class="p">,</span>
@@ -172,7 +175,7 @@ seajs.use(['atip'], function(Atip) {
 </div>
 
 <script>
-seajs.use(['atip'], function(Atip) {
+seajs.use(['../src/atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test6',
         content: '<div style="padding:10px">我是内容</div>',
@@ -182,7 +185,7 @@ seajs.use(['atip'], function(Atip) {
     t.set('content', '更改后的内容');
 });
 </script>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Atip</span><span class="p">({</span>
         <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test6&#39;</span><span class="p">,</span>
         <span class="nx">content</span><span class="o">:</span> <span class="s1">&#39;&lt;div style=&quot;padding:10px&quot;&gt;我是内容&lt;/div&gt;&#39;</span><span class="p">,</span>
@@ -198,7 +201,7 @@ seajs.use(['atip'], function(Atip) {
 </div>
 
 <script>
-seajs.use(['atip'], function(Atip) {
+seajs.use(['../src/atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test8',
         height: 100,
@@ -210,7 +213,7 @@ seajs.use(['atip'], function(Atip) {
     });
 });
 </script>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Atip</span><span class="p">({</span>
         <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test8&#39;</span><span class="p">,</span>
         <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span>
@@ -228,7 +231,7 @@ seajs.use(['atip'], function(Atip) {
 </div>
 
 <script>
-seajs.use(['atip'], function(Atip) {
+seajs.use(['../src/atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test9',
         height: 100,
@@ -240,7 +243,7 @@ seajs.use(['atip'], function(Atip) {
     });
 });
 </script>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Atip</span><span class="p">({</span>
         <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test9&#39;</span><span class="p">,</span>
         <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span>
@@ -258,7 +261,7 @@ seajs.use(['atip'], function(Atip) {
 </div>
 
 <script>
-seajs.use(['atip'], function(Atip) {
+seajs.use(['../src/atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test7',
         triggerType: 'click',        
@@ -268,7 +271,7 @@ seajs.use(['atip'], function(Atip) {
     });
 });
 </script>
-<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span class="nx">seajs</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="s1">&#39;../src/atip&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Atip</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Atip</span><span class="p">({</span>
         <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;#test7&#39;</span><span class="p">,</span>
         <span class="nx">triggerType</span><span class="o">:</span> <span class="s1">&#39;click&#39;</span><span class="p">,</span>        
