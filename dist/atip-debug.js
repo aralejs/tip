@@ -1,4 +1,4 @@
-define("#tip/0.9.2/atip-debug", ["./tip-debug", "$-debug", "#popup/0.9.9/popup-debug", "#overlay/0.9.11/overlay-debug", "#position/1.0.0/position-debug", "#iframe-shim/1.0.0/iframe-shim-debug", "#widget/1.0.2/widget-debug", "#base/1.0.1/base-debug", "#class/1.0.0/class-debug", "#events/1.0.0/events-debug"], function(require, exports, module) {
+define("arale/tip/0.9.2/atip-debug", ["./tip-debug", "$-debug", "arale/popup/0.9.9/popup-debug", "arale/overlay/0.9.12/overlay-debug", "arale/position/1.0.0/position-debug", "arale/iframe-shim/1.0.0/iframe-shim-debug", "arale/widget/1.0.2/widget-debug", "arale/base/1.0.1/base-debug", "arale/class/1.0.0/class-debug", "arale/events/1.0.0/events-debug"], function(require, exports, module) {
 
     var $ = require('$-debug');
     var Tip = require('./tip-debug');
