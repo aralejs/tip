@@ -4,6 +4,10 @@
 
 ---
 
+这里的 Tip 需要自己写 element 在页面上。
+
+---
+
 <style>
 .poptip {
 font:12px/1.5 arial;
@@ -11,7 +15,6 @@ font:12px/1.5 arial;
 .cell {
 overflow:hidden;
 margin-bottom:20px;
-margin-left:100px;
 }
 .cell p {
 float:left;
