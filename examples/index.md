@@ -8,18 +8,19 @@
 
 ---
 
-<style>
-.poptip {
+`````css
+#content .poptip {
 font:12px/1.5 arial;
 }
-.cell {
+#content .cell {
 overflow:hidden;
 margin-bottom:20px;
 }
-.cell p {
+#content .cell p {
 float:left;
 padding:10px;
-background-color:#e80;
+border: 1px solid #e80;
+background: #eee;
 overflow:hidden;
 }
 .fn-hide {
@@ -27,14 +28,14 @@ display:none;
 }
 .ui-tiptext-container * {
 font-size:12px;
-margin:0!important;
-padding:0!important;
+margin:0;
+padding:0;
 line-height:1.5;
 }
 em {
 font-style: normal;
 }
-</style>
+`````
 <link rel="stylesheet" href="https://a.alipayobjects.com/al/alice.components.ui-poptip-1.1-src.css" type="text/css" media="screen" charset="utf-8">
 <link rel="stylesheet" href="https://a.alipayobjects.com/al/alice.components.ui-tiptext-1.3-src.css" type="text/css" media="screen" charset="utf-8">
 
@@ -43,7 +44,7 @@ font-style: normal;
 </div>
 
 <div class="examples">
-<div class="ui-poptip fn-hide" id="poptip1">
+<div class="ui-poptip" id="poptip1">
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-7">
@@ -51,8 +52,8 @@ font-style: normal;
             <span>◆</span>
         </div>                  
         <div class="ui-poptip-content" data-role="content">
-            <div>我是上方的tip</div>
-            <div>我是上方的tip</div>            
+            <div>我是上方的tip ◆</div>
+            <div>我是上方的tip ◆</div>            
         </div>
     </div>
     </div>
