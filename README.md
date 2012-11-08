@@ -9,20 +9,20 @@
 
 ## 配置说明
 
-### content *string|function*
+### content `string|function`
 
 提示内容，使用 `data-role="content"` 标示内容节点。
 
-### direction *string*
+### direction `string`
 
 提示框在目标的位置方向，可选`up|down|left|right`。
 
-### distance *number*
+### distance `number`
 
 提示框离目标距离(px)，默认为8像素。
 
 
-### arrowShift *number*
+### arrowShift `number`
 
     箭头偏移位置(px)，正数表示箭头距左上角的水平或垂直距离，负数表示距右下角的水平或垂直距离，默认为24像素。
 

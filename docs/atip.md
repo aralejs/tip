@@ -10,27 +10,27 @@ Atip 是气泡提示弹出组件，它简化和封装了 Tip 组件，拥有一�
 
 ## API
 
-### trigger *element|string* 
+### trigger `element|string` 
 
 触发点元素。
 
-### triggerType *string*
+### triggerType `string`
 
 触发方式，[ hover | click ]。
 
-### content *string|function*
+### content `string|function`
 
 提示框内容，可为。
 
-### arrowPosition *number*
+### arrowPosition `number`
 
 箭头位置，按钟表点位置，目前支持1、2、5、7、10、11点位置，默认 7 点钟。
 
-### theme *string*
+### theme `string`
 
 配色主题，内置黄色、蓝色和白色三种提示框样式[ yellow | blue | white ]，默认为黄色。
 
-### inViewport *boolean*
+### inViewport `boolean`
 
 当弹出层显示在屏幕外时，是否自动转换浮层位置，默认为 false。
 
