@@ -19,7 +19,7 @@ margin-bottom:20px;
 #content .cell p {
 float:left;
 padding:10px;
-border: 1px solid #e80;
+border: 2px solid #e80;
 background: #eee;
 overflow:hidden;
 }
@@ -44,7 +44,7 @@ font-style: normal;
 </div>
 
 <div class="examples">
-<div class="ui-poptip" id="poptip1">
+<div class="ui-poptip fn-hide" id="poptip1">
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-7">
