@@ -172,7 +172,7 @@ seajs.use(['tip'], function(Tip) {
 <div class="ui-poptip fn-hide" id="poptip4-1">
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
-        <div class="ui-poptip-arrow ui-poptip-arrow-5">
+        <div class="ui-poptip-arrow ui-poptip-arrow-1">
             <em>◆</em>
             <span>◆</span>
         </div>
