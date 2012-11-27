@@ -61,7 +61,7 @@ font-style: normal;
 </div>
 
 ````javascript
-seajs.use(['../src/tip'], function(Tip) {
+seajs.use(['tip'], function(Tip) {
     new Tip({
         element: '#poptip1',    
         trigger: '#test1'
@@ -91,7 +91,7 @@ seajs.use(['../src/tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['../src/tip'], function(Tip) {
+seajs.use(['tip'], function(Tip) {
     new Tip({
         element: '#poptip2',
         trigger: '#test2',
@@ -122,7 +122,7 @@ seajs.use(['../src/tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['../src/tip'], function(Tip) {
+seajs.use(['tip'], function(Tip) {
     new Tip({
         element: '#poptip3',
         trigger: '#test3',
@@ -154,7 +154,7 @@ seajs.use(['../src/tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['../src/tip'], function(Tip) {
+seajs.use(['tip'], function(Tip) {
     new Tip({
         element: '#poptip4',
         trigger: '#test4',
@@ -186,12 +186,12 @@ seajs.use(['../src/tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['../src/tip'], function(Tip) {
+seajs.use(['tip'], function(Tip) {
     new Tip({
         element: '#poptip4-1',
         trigger: '#test4-1',
         triggerType: 'click',
-        direction: 'up',
+        direction: 'down',
         arrowShift: -20
     });
 });
@@ -212,7 +212,7 @@ seajs.use(['../src/tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['../src/tip'], function(Tip) {
+seajs.use(['tip'], function(Tip) {
     new Tip({
         element: '#poptip5',
         trigger: '#test5',
@@ -237,7 +237,7 @@ seajs.use(['../src/tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['../src/tip'], function(Tip) {
+seajs.use(['tip'], function(Tip) {
     new Tip({
         element: '#poptip6',
         trigger: '#test6',
