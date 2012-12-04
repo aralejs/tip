@@ -1,4 +1,3 @@
-
 # Tip
 
 ---
@@ -58,7 +57,7 @@ Tip 组件推荐和[alice.components.ui-poptip](http://arale.alipay.im/projects/
 </div>
 
 <script>
-seajs.use(['../src/tip'], function(Tip) {
+seajs.use(['arale/tip/{{版本号}}/tip'], function(Tip) {
     new Tip({
         element: '#poptip',    
         trigger: '#test',
