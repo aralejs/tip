@@ -1,6 +1,6 @@
 {
     "name": "tip",
-    "version": "0.9.2",
+    "version": "0.9.3",
     "root": "arale",
     "tag": "widget",
     "description": "基础提示框组件，用于带箭头的 hover 提示框显示和隐藏。",
