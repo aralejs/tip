@@ -247,3 +247,60 @@ seajs.use(['tip'], function(Tip) {
 });
 ````
 
+<div class="cell">
+    <p id="test7">淡出Tip</p>
+</div>
+
+<div class="ui-poptip fn-hide" id="poptip7">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">
+        <div class="ui-poptip-arrow ui-poptip-arrow-7">
+            <em>◆</em>
+            <span>◆</span>
+        </div>                  
+        <div class="ui-poptip-content" data-role="content">
+            <div>我是淡出的tip ◆</div>
+            <div>我是淡出的tip ◆</div>            
+        </div>
+    </div>
+    </div>
+</div>
+
+````javascript
+seajs.use(['tip'], function(Tip) {
+    new Tip({
+        element: '#poptip7',    
+        trigger: '#test7',
+        effect: 'fade'
+    });
+});
+````
+
+<div class="cell">
+    <p id="test8">滑出Tip</p>
+</div>
+
+<div class="ui-poptip fn-hide" id="poptip8">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">
+        <div class="ui-poptip-arrow ui-poptip-arrow-7">
+            <em>◆</em>
+            <span>◆</span>
+        </div>                  
+        <div class="ui-poptip-content" data-role="content">
+            <div>我是滑出的tip ◆</div>
+            <div>我是滑出的tip ◆</div>            
+        </div>
+    </div>
+    </div>
+</div>
+
+````javascript
+seajs.use(['tip'], function(Tip) {
+    new Tip({
+        element: '#poptip8',    
+        trigger: '#test8',
+        effect: 'slide'
+    });
+});
+````

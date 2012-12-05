@@ -16,11 +16,11 @@
     "license": "",
     "dependencies": {
         "$": "$",
-        "popup": "arale/popup/0.9.9/popup"
+        "popup": "arale/popup/0.9.10/popup"
     },
     "tests": ["tip"],
     "output": {
-        "tip.js": ["tip.js"],
-        "atip.js": ["atip.js"]
+        "tip.js": ["./tip.js"],
+        "atip.js": ["./atip.js"]
     }
 }
