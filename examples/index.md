@@ -300,7 +300,8 @@ seajs.use(['tip'], function(Tip) {
     new Tip({
         element: '#poptip8',    
         trigger: '#test8',
-        effect: 'slide'
+        effect: 'slide',
+        duration: 100
     });
 });
 ````
