@@ -15,6 +15,7 @@ font:12px/1.5 arial;
 #content .cell {
 overflow:hidden;
 margin-bottom:20px;
+zoom:1;
 }
 #content .cell p {
 float:left;
