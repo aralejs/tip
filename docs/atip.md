@@ -1,8 +1,10 @@
 # Atip 使用文档
 
+- order: 1
+
 ---
 
-Atip 是气泡提示弹出组件，它简化和封装了 Tip 组件，拥有一套默认的结构，可以很方便得直接使用。
+Atip 是气泡提示弹出组件，它简化和封装了 Tip 组件，拥有一套默认的结构，可以很方便地直接使用。
 
 依赖于样式 [alice.components.ui-poptip](http://arale.alipay.im/projects/4ffbc0e6f137f3a16a23b1c9) 。
 
