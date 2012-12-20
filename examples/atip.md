@@ -23,14 +23,14 @@ em {
 font-style: normal;
 }
 </style>
-<link rel="stylesheet" href="https://a.alipayobjects.com/al/alice.components.ui-poptip-1.1-src.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="https://a.alipayobjects.com/al/alice.components.ui-poptip-1.2-src.css" type="text/css" media="screen" charset="utf-8">
 
 <div class="cell">
     <p id="test">10点钟位置</p>
 </div>
 
 ````javascript
-seajs.use(['../src/atip'], function(Atip) {
+seajs.use(['atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test',
         content: '<div style="padding:10px">我是内容</div>',
@@ -44,7 +44,7 @@ seajs.use(['../src/atip'], function(Atip) {
 </div>
 
 ````javascript
-seajs.use(['../src/atip'], function(Atip) {
+seajs.use(['atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test2',
         content: '<div style="padding:10px">我是内容</div>',
@@ -59,7 +59,7 @@ seajs.use(['../src/atip'], function(Atip) {
 </div>
 
 ````javascript
-seajs.use(['../src/atip'], function(Atip) {
+seajs.use(['atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test3',
         content: '<div style="padding:10px">我是内容</div>',
@@ -73,7 +73,7 @@ seajs.use(['../src/atip'], function(Atip) {
 </div>
 
 ````javascript
-seajs.use(['../src/atip'], function(Atip) {
+seajs.use(['atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test4',
         content: '<div style="padding:10px">我是内容</div>',
@@ -87,7 +87,7 @@ seajs.use(['../src/atip'], function(Atip) {
 </div>
 
 ````javascript
-seajs.use(['../src/atip'], function(Atip) {
+seajs.use(['atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test5',
         content: '<div style="padding:10px">我是内容</div>',
@@ -101,7 +101,7 @@ seajs.use(['../src/atip'], function(Atip) {
 </div>
 
 ````javascript
-seajs.use(['../src/atip'], function(Atip) {
+seajs.use(['atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test6',
         content: '<div style="padding:10px">我是内容</div>',
@@ -117,7 +117,7 @@ seajs.use(['../src/atip'], function(Atip) {
 </div>
 
 ````javascript
-seajs.use(['../src/atip'], function(Atip) {
+seajs.use(['atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test8',
         height: 100,
@@ -135,7 +135,7 @@ seajs.use(['../src/atip'], function(Atip) {
 </div>
 
 ````javascript
-seajs.use(['../src/atip'], function(Atip) {
+seajs.use(['atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test9',
         height: 100,
@@ -153,7 +153,7 @@ seajs.use(['../src/atip'], function(Atip) {
 </div>
 
 ````javascript
-seajs.use(['../src/atip'], function(Atip) {
+seajs.use(['atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test7',
         triggerType: 'click',        
