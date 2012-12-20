@@ -30,15 +30,28 @@
 
 ## 最佳实践
 
+```js
+seajs.use(['arale/tip/{{版本号}}/tip'], function(Tip) {
+    new Tip({
+        element: '#poptip',     // 提示框    
+        trigger: '#test',       // 触发器
+        direction: 'up',        // 提示框在触发器上方
+        arrowShift: 40          // 箭头距框边距离 40 px
+    });
+});
+```
+
 Tip 组件不和具体结构依赖，可以自由和各种 dom 结构进行搭配，需要在页面上自己写 html （或者传模板参数）。若想直接使用带箭头的Tip，可以试试 [Atip](http://aralejs.org/tip/docs/atip.html)。
 
 Tip 组件推荐和 [ui-poptip](http://arale.alipay.im/projects/4ee06eabb5f7002877019198) 或 [ui-tiptext](http://arale.alipay.im/projects/4ffbc0e6f137f3a16a23b1c9) 等 Tip 样式配合使用，用`direction`属性来控制提示框出现的位置，用`arrowShift`属性来调节箭头的偏移。
 
-下面是一个简单示例。
+下面是一个完整的应用示例。
 
 ```html
+<!-- 这里是触发元素 -->
 <p id="test">鼠标移上来试试</p>
 
+<!-- 这里是提示框，一开始是隐藏的 -->
 <div class="ui-poptip fn-hide" id="poptip">
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
@@ -54,6 +67,7 @@ Tip 组件推荐和 [ui-poptip](http://arale.alipay.im/projects/4ee06eabb5f70028
     </div>
 </div>
 
+<!-- 绑定事件 -->
 <script>
 seajs.use(['arale/tip/{{版本号}}/tip'], function(Tip) {
     new Tip({
