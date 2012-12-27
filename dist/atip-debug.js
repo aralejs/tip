@@ -1,129 +1,89 @@
-define("arale/tip/0.9.3/atip-debug", ["./tip-debug", "$-debug", "arale/popup/0.9.10/popup-debug", "arale/overlay/0.9.13/overlay-debug", "arale/position/1.0.0/position-debug", "arale/iframe-shim/1.0.0/iframe-shim-debug", "arale/widget/1.0.2/widget-debug", "arale/base/1.0.1/base-debug", "arale/class/1.0.0/class-debug", "arale/events/1.0.0/events-debug"], function(require, exports, module) {
-
-    var $ = require('$-debug');
-    var Tip = require('./tip-debug');
-
+define("arale/tip/0.9.4/atip-debug", [ "./tip-debug", "$-debug", "arale/popup/0.9.12/popup-debug", "arale/overlay/0.9.13/overlay-debug", "arale/position/1.0.0/position-debug", "arale/iframe-shim/1.0.0/iframe-shim-debug", "arale/widget/1.0.2/widget-debug", "arale/base/1.0.1/base-debug", "arale/class/1.0.0/class-debug", "arale/events/1.0.0/events-debug" ], function(require, exports, module) {
+    var $ = require("$-debug");
+    var Tip = require("./tip-debug");
     // 气泡提示弹出组件
     // 依赖样式 alice.components.ui-poptip
     var Atip = Tip.extend({
-    
         attrs: {
-
-            template: '<div class="ui-poptip"> <div class="ui-poptip-shadow"> <div class="ui-poptip-container"> <div class="ui-poptip-arrow"> <em>◆</em> <span>◆</span> </div>                  <div class="ui-poptip-content" data-role="content"> </div> </div> </div> </div>',
-            
+            template: '<div class="ui-poptip">\n<div class="ui-poptip-shadow">\n<div class="ui-poptip-container">\n<div class="ui-poptip-arrow">\n<em>◆</em>\n<span>◆</span>\n</div>                 \n<div class="ui-poptip-content" data-role="content">\n</div>\n</div>\n</div>\n</div>',
             // 提示内容
-            content: '这是一个提示框',
-
+            content: "这是一个提示框",
             // 箭头位置
             // 按钟表点位置，目前支持1、2、5、7、10、11点位置
             arrowPosition: 7,
-
             // 颜色 [yellow|blue|white]
-            theme: 'yellow',
-
+            theme: "yellow",
             // 当弹出层显示在屏幕外时，是否自动转换浮层位置
             inViewport: false,
-
             // 宽度
-            width: 'auto',
-
+            width: "auto",
             // 高度
-            height: 'auto'
-
+            height: "auto"
         },
-
         setup: function() {
-            this._originArrowPosition = this.get('arrowPosition');
-            Atip.superclass.setup.call(this);            
+            this._originArrowPosition = this.get("arrowPosition");
+            Atip.superclass.setup.call(this);
         },
-
         show: function() {
             Atip.superclass.show.call(this);
             this._makesureInViewport();
         },
-
         _makesureInViewport: function() {
-            if (this.get('inViewport')) {
-                var ap = this._originArrowPosition,
-                    scrollTop = $(window).scrollTop(),
-                    viewportHeight = $(window).outerHeight(),
-                    elemHeight = this.element.height() + this.get('distance'),
-                    triggerTop = $(this.get('trigger')).offset().top,
-                    arrowMap = {
-                        "1" : "5",
-                        "5" : "1",
-                        "7" : "11",
-                        "11" : "7"
-                    };
-                if ((ap === 11 || ap === 1)
-                        && (triggerTop > scrollTop + viewportHeight - elemHeight)) {
-                    this.set('arrowPosition', arrowMap[ap]);                    
-                }
-                else if ((ap === 7 || ap === 5)
-                        && (triggerTop < scrollTop + elemHeight)) {
-                    this.set('arrowPosition', arrowMap[ap]);
-                }
-                else {
-                    this.set('arrowPosition', this._originArrowPosition);
+            if (this.get("inViewport")) {
+                var ap = this._originArrowPosition, scrollTop = $(window).scrollTop(), viewportHeight = $(window).outerHeight(), elemHeight = this.element.height() + this.get("distance"), triggerTop = $(this.get("trigger")).offset().top, arrowMap = {
+                    "1": "5",
+                    "5": "1",
+                    "7": "11",
+                    "11": "7"
+                };
+                if ((ap === 11 || ap === 1) && triggerTop > scrollTop + viewportHeight - elemHeight) {
+                    this.set("arrowPosition", arrowMap[ap]);
+                } else if ((ap === 7 || ap === 5) && triggerTop < scrollTop + elemHeight) {
+                    this.set("arrowPosition", arrowMap[ap]);
+                } else {
+                    this.set("arrowPosition", this._originArrowPosition);
                 }
             }
         },
-
         // 用于 set 属性后的界面更新
-
         _onRenderArrowPosition: function(val, prev) {
             val = parseInt(val, 10);
-            var arrow = this.$('.ui-poptip-arrow');
-            arrow.removeClass('ui-poptip-arrow-' + prev)
-                 .addClass('ui-poptip-arrow-' + val);
-
-            var direction = '', arrowShift = 0;
-            if(val === 10) {
-                direction = 'right';
+            var arrow = this.$(".ui-poptip-arrow");
+            arrow.removeClass("ui-poptip-arrow-" + prev).addClass("ui-poptip-arrow-" + val);
+            var direction = "", arrowShift = 0;
+            if (val === 10) {
+                direction = "right";
                 arrowShift = 20;
-            }
-            else if (val === 11) {
-                direction = 'down';
+            } else if (val === 11) {
+                direction = "down";
+                arrowShift = 22;
+            } else if (val === 1) {
+                direction = "down";
+                arrowShift = -22;
+            } else if (val === 2) {
+                direction = "left";
+                arrowShift = 20;
+            } else if (val === 5) {
+                direction = "up";
+                arrowShift = -22;
+            } else if (val === 7) {
+                direction = "up";
                 arrowShift = 22;
             }
-            else if (val === 1) {
-                direction = 'down';
-                arrowShift = -22;
-            }
-            else if (val === 2) {
-                direction = 'left';
-                arrowShift = 20;
-            }
-            else if (val === 5) {
-                direction = 'up';
-                arrowShift = -22;
-            }
-            else if (val === 7) {
-                direction = 'up';
-                arrowShift = 22;
-            }
-            this.set('direction', direction);
-            this.set('arrowShift', arrowShift);
+            this.set("direction", direction);
+            this.set("arrowShift", arrowShift);
             this._setAlign();
         },
-
         _onRenderWidth: function(val) {
-            this.$('[data-role="content"]').css('width', val);
+            this.$('[data-role="content"]').css("width", val);
         },
-
         _onRenderHeight: function(val) {
-            this.$('[data-role="content"]').css('height', val);
+            this.$('[data-role="content"]').css("height", val);
         },
-
         _onRenderTheme: function(val, prev) {
-            this.element.removeClass('ui-poptip-' + prev);
-            this.element.addClass('ui-poptip-' + val);
+            this.element.removeClass("ui-poptip-" + prev);
+            this.element.addClass("ui-poptip-" + val);
         }
-
     });
-
     module.exports = Atip;
-
 });
-
-
