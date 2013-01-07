@@ -1,12 +1,11 @@
 define(function(require, exports, module) {
 
-    var $ = require('$'),
-        Popup = require('popup');
+    var Popup = require('popup');
 
     // 通用提示组件
     // 兼容站内各类样式
     var Tip = Popup.extend({
-        
+
         attrs: {
             // 提示内容
             content: '',
@@ -53,7 +52,7 @@ define(function(require, exports, module) {
         },
 
         setup: function() {
-            Tip.superclass.setup.call(this); 
+            Tip.superclass.setup.call(this);
             this._setAlign();
         },
 
@@ -61,7 +60,7 @@ define(function(require, exports, module) {
 
         _onRenderContent: function(val) {
             var ctn = this.$('[data-role="content"]');
-            if (typeof val !== 'string') { 
+            if (typeof val !== 'string') {
                 val = val.call(this);
             }
             ctn && ctn.html(val);

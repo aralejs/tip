@@ -6,11 +6,11 @@ define(function(require, exports, module) {
     // 气泡提示弹出组件
     // 依赖样式 alice.components.ui-poptip
     var Atip = Tip.extend({
-    
+
         attrs: {
 
             template: require('./atip.tpl'),
-            
+
             // 提示内容
             content: '这是一个提示框',
 
@@ -34,7 +34,7 @@ define(function(require, exports, module) {
 
         setup: function() {
             this._originArrowPosition = this.get('arrowPosition');
-            Atip.superclass.setup.call(this);            
+            Atip.superclass.setup.call(this);
         },
 
         show: function() {
@@ -50,17 +50,17 @@ define(function(require, exports, module) {
                     elemHeight = this.element.height() + this.get('distance'),
                     triggerTop = $(this.get('trigger')).offset().top,
                     arrowMap = {
-                        "1" : "5",
-                        "5" : "1",
-                        "7" : "11",
-                        "11" : "7"
+                        '1': '5',
+                        '5': '1',
+                        '7': '11',
+                        '11': '7'
                     };
-                if ((ap === 11 || ap === 1)
-                        && (triggerTop > scrollTop + viewportHeight - elemHeight)) {
-                    this.set('arrowPosition', arrowMap[ap]);                    
+                if ((ap === 11 || ap === 1) &&
+                    (triggerTop > scrollTop + viewportHeight - elemHeight)) {
+                    this.set('arrowPosition', arrowMap[ap]);
                 }
-                else if ((ap === 7 || ap === 5)
-                        && (triggerTop < scrollTop + elemHeight)) {
+                else if ((ap === 7 || ap === 5) &&
+                          (triggerTop < scrollTop + elemHeight)) {
                     this.set('arrowPosition', arrowMap[ap]);
                 }
                 else {
@@ -78,7 +78,7 @@ define(function(require, exports, module) {
                  .addClass('ui-poptip-arrow-' + val);
 
             var direction = '', arrowShift = 0;
-            if(val === 10) {
+            if (val === 10) {
                 direction = 'right';
                 arrowShift = 20;
             }

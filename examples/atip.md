@@ -23,7 +23,7 @@ em {
 font-style: normal;
 }
 </style>
-<link rel="stylesheet" href="https://a.alipayobjects.com/al/alice.components.ui-poptip-1.2-src.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="https://a.alipayobjects.com/al/alice.components.ui-poptip-1.3-src.css" type="text/css" media="screen" charset="utf-8">
 
 <div class="cell">
     <p id="test">10点钟位置</p>
