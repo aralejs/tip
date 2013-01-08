@@ -18,7 +18,6 @@ define(function(require, exports, module) {
 
             // 箭头偏移位置(px)，负数表示箭头在靠右或靠下位置
             arrowShift: 24
-
         },
 
         _setAlign: function() {
