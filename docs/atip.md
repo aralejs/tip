@@ -8,6 +8,8 @@ Atip 是气泡提示弹出组件，它简化和封装了 Tip 组件，拥有一�
 
 依赖于样式 [alice.components.ui-poptip](http://arale.alipay.im/projects/4ffbc0e6f137f3a16a23b1c9) 。
 
+[演示](http://aralejs.org/tip/examples/atip.html)
+
 ---
 
 ## API
