@@ -16,7 +16,7 @@
 
 ### direction `string`
 
-提示框在目标的位置方向，可选`up|down|left|right`。
+提示框在目标的位置方向，可选`up|down|left|right`。默认为 `up`。
 
 ### distance `number`
 
