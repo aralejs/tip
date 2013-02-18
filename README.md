@@ -2,6 +2,8 @@
 
 ---
 
+[![Build Status](https://secure.travis-ci.org/aralejs/tip.png)](https://travis-ci.org/aralejs/tip)
+
 基础提示框组件，用于带箭头的 hover 提示框显示和隐藏。
 
 ---
