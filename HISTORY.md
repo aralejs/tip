@@ -2,6 +2,13 @@
 
 ---
 
+## 1.0.0
+
+`tag:improved` 依赖升级到 [arale.popup@1.0.0](http://aralejs.org/popup/history.html)。
+
+`tag:improved` Atip 依赖了 [alice.poptip](http://aliceui.org/poptip) ，Atip 组件无须再单独引用样式。
+
+
 ## 0.9.4
 
 `tag:improved` 依赖升级到 [arale.popup@0.9.12](http://aralejs.org/popup/history.html)。

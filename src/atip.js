@@ -3,8 +3,11 @@ define(function(require, exports, module) {
     var $ = require('$');
     var Tip = require('./tip');
 
+    // 依赖样式 alice.poptip    
+    require('ui-poptip');
+
     // 气泡提示弹出组件
-    // 依赖样式 alice.components.ui-poptip
+    // ---
     var Atip = Tip.extend({
 
         attrs: {

@@ -1,6 +1,6 @@
 {
     "name": "tip",
-    "version": "0.9.4",
+    "version": "1.0.0",
     "root": "arale",
     "tag": "widget",
     "description": "基础提示框组件，用于带箭头的 hover 提示框显示和隐藏。",
@@ -16,7 +16,8 @@
     "license": "",
     "dependencies": {
         "$": "$",
-        "popup": "arale/popup/0.9.12/popup"
+        "popup": "arale/popup/1.0.0/popup",
+        "ui-poptip": "alice/poptip/1.0.0/poptip.css"
     },
     "tests": ["tip"],
     "output": {
