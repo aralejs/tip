@@ -142,17 +142,16 @@ seajs.use(['atip'], function(Atip) {
 ````
 
 <div class="cell">
-    <p id="test7">点击弹出Tip</p>
+    <p id="test7">进行适当的偏移</p>
 </div>
 
 ````javascript
 seajs.use(['atip'], function(Atip) {
     var t = new Atip({
         trigger: '#test7',
-        triggerType: 'click',        
         content: '<div style="padding:10px">我是内容</div>',
         theme: 'white',
-        arrowPosition: 7
+        pointPos: 10
     });
 });
 ````

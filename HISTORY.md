@@ -2,6 +2,12 @@
 
 ---
 
+## 1.0.1
+
+`tag:improved` 依赖升级到 [arale.popup@1.0.1](http://aralejs.org/popup/history.html)。
+
+`tag:improved` 添加了 `pointPos` 参数，Atip 也可以使用此参数进行位置调节。[#5](https://github.com/aralejs/tip/issues/5)
+
 ## 1.0.0
 
 `tag:improved` 依赖升级到 [arale.popup@1.0.0](http://aralejs.org/popup/history.html)。
