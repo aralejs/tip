@@ -1,4 +1,4 @@
-define("arale/tip/1.1.0/atip-debug", [ "./tip-debug", "$-debug", "arale/popup/1.0.1/popup-debug", "arale/overlay/1.0.0/overlay-debug", "arale/position/1.0.0/position-debug", "arale/iframe-shim/1.0.0/iframe-shim-debug", "arale/widget/1.0.3/widget-debug", "arale/base/1.0.1/base-debug", "arale/class/1.0.0/class-debug" ], function(require, exports, module) {
+define("arale/tip/1.1.0/atip-debug", [ "./tip-debug", "$-debug", "arale/popup/1.0.1/popup-debug", "arale/overlay/1.0.1/overlay-debug", "arale/position/1.0.0/position-debug", "arale/iframe-shim/1.0.1/iframe-shim-debug", "arale/widget/1.0.3/widget-debug", "arale/base/1.0.1/base-debug", "arale/class/1.0.0/class-debug" ], function(require, exports, module) {
     var $ = require("$-debug");
     var Tip = require("./tip-debug");
     // 依赖样式 alice.poptip    
