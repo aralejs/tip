@@ -2,6 +2,10 @@
 
 ---
 
+## 1.1.1
+
+`tag:improved` 依赖升级到 [arale.popup@1.0.2](http://aralejs.org/popup/history.html)。
+
 ## 1.1.0
 
 `tag:improved` 依赖升级到 [arale.popup@1.0.1](http://aralejs.org/popup/history.html)。
