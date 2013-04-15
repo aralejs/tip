@@ -18,7 +18,6 @@
     "alias": {
       "$": "$",
       "popup": "arale/popup/1.0.2/popup",
-      "handlebars": "gallery/handlebars/1.0.0/runtime",
       "ui-poptip": "alice/poptip/1.0.0/poptip.css"
     },
     "output": ["tip.js", "atip.js"]

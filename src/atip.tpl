@@ -4,7 +4,7 @@
         <div class="ui-poptip-arrow">
             <em>◆</em>
             <span>◆</span>
-        </div>                  
+        </div>
         <div class="ui-poptip-content" data-role="content">
         </div>
     </div>
