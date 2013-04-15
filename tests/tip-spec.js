@@ -1,5 +1,7 @@
 define(function(require) {
 
+    var exepct = require('expect');
+
     var $ = require('$');
     var Tip = require('../src/tip');
     var tip, trigger;
