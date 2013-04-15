@@ -12,7 +12,7 @@ define(function(require, exports, module) {
 
         attrs: {
 
-            template: require('./atip.handlebars'),
+            template: require('./atip.tpl'),
 
             // 提示内容
             content: '这是一个提示框',
