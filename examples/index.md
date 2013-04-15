@@ -351,7 +351,7 @@ seajs.use(['tip'], function(Tip) {
     new Tip({
         element: '#poptip8',    
         trigger: '#test8',
-        direction: 'up',
+        direction: 'down',
         effect: 'slide',
         duration: 100
     });
