@@ -12,7 +12,7 @@ server:
 watch:
 	@nico server -C $(THEME)/nico.js --watch
 
-publish-doc: clean build-doc
+publish: clean build-doc
 	@spm publish --doc _site
 
 clean:
@@ -24,11 +24,11 @@ url = tests/runner.html
 test-task:
 	@mocha-phantomjs --reporter=${reporter} http://127.0.0.1:8000/${url}
 
-test-dist:
+test-src:
 	@node $(THEME)/server.js _site $(MAKE) test-task
 
-test-src:
-	@$(MAKE) test-dist url=tests/runner.html?src
+test-dist:
+	@$(MAKE) test-src url=tests/runner.html?dist
 
 test: test-src test-dist
 

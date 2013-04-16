@@ -2,7 +2,9 @@
   "name": "tip",
   "version": "1.1.1",
   "family": "arale",
-  "tag": "widget",
+  "keywords": [
+    "widget"
+  ],
   "description": "基础提示框组件，用于带箭头的 hover 提示框显示和隐藏。",
   "homepage": "http://aralejs.org/tip",
   "author": "afc163 <afc163@gmail.com>",
