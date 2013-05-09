@@ -3,7 +3,7 @@ define(function(require) {
     var exepct = require('expect');
 
     var $ = require('$');
-    var Tip = require('../src/tip');
+    var Tip = require('tip');
     var tip, trigger;
     var TPL = '<div><div data-role="content"></div></div>';
     var CONTENT = '_content_';
