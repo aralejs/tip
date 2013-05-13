@@ -106,6 +106,30 @@ define(function(require) {
             expect(tip.element.offset().left).to.be(trigger.offset().left + trigger.width()/2 - 50);
         });
 
+        it('content from function', function() {
+            tip = new Tip({
+                trigger: trigger,
+                template: TPL,                
+                content: function() {
+                    return 'test content';
+                }
+            });
+            tip.show();
+            expect(tip.element.find('[data-role="content"]').html()).to.be('test content');
+        });
+
+        it('negative arrowShift', function() {
+            tip = new Tip({
+                trigger: trigger,
+                template: TPL,
+                content: CONTENT,
+                distance: 0,
+                arrowShift: -10
+            });
+            tip.show();
+            expect(tip.element.offset().left).to.be(trigger.offset().left + trigger.width()/2 - tip.element.width() + 10);
+        });
+
     });
 
 });
