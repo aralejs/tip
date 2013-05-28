@@ -8,7 +8,7 @@ define(function(require, exports, module) {
 
         attrs: {
             // 提示内容
-            content: '',
+            content: null,
 
             // 提示框在目标的位置方向 [up|down|left|right]
             direction: 'up',

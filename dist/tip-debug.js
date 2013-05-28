@@ -1,11 +1,11 @@
-define("arale/tip/1.1.1/tip-debug", [ "arale/popup/1.0.2/popup-debug", "$-debug", "arale/overlay/1.0.1/overlay-debug", "arale/position/1.0.0/position-debug", "arale/iframe-shim/1.0.1/iframe-shim-debug", "arale/widget/1.0.3/widget-debug", "arale/base/1.0.1/base-debug", "arale/class/1.0.0/class-debug", "arale/events/1.0.0/events-debug" ], function(require, exports, module) {
-    var Popup = require("arale/popup/1.0.2/popup-debug");
+define("arale/tip/1.1.2/tip-debug", [ "arale/popup/1.1.0/popup-debug", "$-debug", "arale/overlay/1.1.0/overlay-debug", "arale/position/1.0.0/position-debug", "arale/iframe-shim/1.0.1/iframe-shim-debug", "arale/widget/1.1.0/widget-debug", "arale/base/1.1.0/base-debug", "arale/class/1.0.0/class-debug", "arale/events/1.1.0/events-debug" ], function(require, exports, module) {
+    var Popup = require("arale/popup/1.1.0/popup-debug");
     // 通用提示组件
     // 兼容站内各类样式
     var Tip = Popup.extend({
         attrs: {
             // 提示内容
-            content: "",
+            content: null,
             // 提示框在目标的位置方向 [up|down|left|right]
             direction: "up",
             // 提示框离目标距离(px)
