@@ -24,7 +24,7 @@ define(function(require, exports, module) {
         },
 
         _setAlign: function() {
-            var alignObject = {},
+            var alignObject = { baseElement: this.get('trigger')[0] },
                 arrowShift = this.get('arrowShift'),
                 distance = this.get('distance'),
                 pointPos = this.get('pointPos'),
