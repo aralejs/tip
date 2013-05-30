@@ -266,6 +266,47 @@ seajs.use(['tip'], function(Tip) {
 });
 ````
 
+
+### 多个 trigger
+
+<p id="example6" class="cell">
+    <button data-id="10015">图片1</button>
+    <button data-id="10016">图片2</button>
+    <button data-id="10053">图片3</button>
+    <button data-id="10075">图片4</button>
+</p>
+
+<div class="examples">
+<div class="ui-poptip fn-hide" id="poptip19">
+    <div class="ui-poptip-shadow">
+    <div class="ui-poptip-container">
+        <div class="ui-poptip-arrow ui-poptip-arrow-7">
+            <em>◆</em>
+            <span>◆</span>
+        </div>
+        <div class="ui-poptip-content" data-role="content">
+            <div>我是上方的tip ◆</div>
+            <div>我是上方的tip ◆</div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+````javascript
+seajs.use(['tip'], function(Tip) {
+    new Tip({
+        trigger: '#example6 button',
+        element: '#poptip19',
+        direction: 'up'
+    }).before('show',function() {
+        var img = '<img src="https://i.alipayobjects.com/combo.jpg?d=apps/58&t='+ this.activeTrigger.attr('data-id') + '" />';
+        this.set('content', img);
+    });
+});
+````
+
+
 ## 更换下样式和模板
 
 <div class="cell">

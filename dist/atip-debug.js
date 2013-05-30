@@ -108,9 +108,7 @@ define("arale/tip/1.1.2/tip-debug", [ "arale/popup/1.1.0/popup-debug", "$-debug"
             pointPos: "50%"
         },
         _setAlign: function() {
-            var alignObject = {
-                baseElement: this.get("trigger")[0]
-            }, arrowShift = this.get("arrowShift"), distance = this.get("distance"), pointPos = this.get("pointPos"), direction = this.get("direction");
+            var alignObject = {}, arrowShift = this.get("arrowShift"), distance = this.get("distance"), pointPos = this.get("pointPos"), direction = this.get("direction");
             if (arrowShift < 0) {
                 arrowShift = "100%" + arrowShift;
             }
