@@ -300,7 +300,7 @@ seajs.use(['tip'], function(Tip) {
         element: '#poptip19',
         direction: 'up'
     }).before('show',function() {
-        var img = '<img src="https://i.alipayobjects.com/combo.jpg?d=apps/58&t='+ this.activeTrigger.attr('data-id') + '" />';
+        var img = '<img style="width: 58px;height:58px;" src="https://i.alipayobjects.com/combo.jpg?d=apps/58&t='+ this.activeTrigger.attr('data-id') + '" />';
         this.set('content', img);
     });
 });
