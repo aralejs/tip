@@ -7,7 +7,11 @@
   ],
   "description": "基础提示框组件，用于带箭头的 hover 提示框显示和隐藏。",
   "homepage": "http://aralejs.org/tip",
-  "author": "afc163 <afc163@gmail.com>",
+  "author": "偏右 <afc163@gmail.com>",
+  "maintainers": [
+    "偏右 <afc163@gmail.com>",
+    "乔花 <shengyan1985@gmail.com>"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/aralejs/tip.git"
