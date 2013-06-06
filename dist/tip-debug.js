@@ -1,4 +1,4 @@
-define("arale/tip/1.1.2/tip-debug", [ "arale/popup/1.1.0/popup-debug", "$-debug", "arale/overlay/1.1.0/overlay-debug", "arale/position/1.0.0/position-debug", "arale/iframe-shim/1.0.1/iframe-shim-debug", "arale/widget/1.1.0/widget-debug", "arale/base/1.1.0/base-debug", "arale/class/1.0.0/class-debug", "arale/events/1.1.0/events-debug" ], function(require, exports, module) {
+define("arale/tip/1.1.2/tip-debug", [ "arale/popup/1.1.0/popup-debug", "$-debug", "arale/overlay/1.1.0/overlay-debug", "arale/position/1.0.1/position-debug", "arale/iframe-shim/1.0.2/iframe-shim-debug", "arale/widget/1.1.0/widget-debug", "arale/base/1.1.0/base-debug", "arale/class/1.1.0/class-debug", "arale/events/1.1.0/events-debug" ], function(require, exports, module) {
     var Popup = require("arale/popup/1.1.0/popup-debug");
     // 通用提示组件
     // 兼容站内各类样式
