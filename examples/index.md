@@ -37,8 +37,8 @@ em {
 font-style: normal;
 }
 `````
-<link rel="stylesheet" href="http://modules.spmjs.org/alice/poptip/1.0.0/poptip-debug.css" type="text/css" media="screen" charset="utf-8">
-<link rel="stylesheet" href="http://modules.spmjs.org/alice/tiptext/1.0.0/tiptext-debug.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="http://assets.spmjs.org/alice/poptip/1.0.0/poptip-debug.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="http://assets.spmjs.org/alice/tiptext/1.1.0/tiptext-debug.css" type="text/css" media="screen" charset="utf-8">
 
 ## 方向参数 direction
 
