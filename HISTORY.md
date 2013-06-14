@@ -2,6 +2,12 @@
 
 ---
 
+
+## 1.1.3
+
+`tag:fixed` 由于之前 build 出来的代码包含依赖两个不同版本的 position, 重新 build
+
+
 ## 1.1.2
 
 `tag:improved` 依赖升级到 [arale.popup@1.1.0](http://aralejs.org/popup/history.html)。
