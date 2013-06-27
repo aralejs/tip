@@ -26,6 +26,7 @@
       "popup": "arale/popup/1.1.1/popup",
       "ui-poptip": "alice/poptip/1.0.0/poptip.css"
     },
-    "output": ["tip.js", "atip.js"]
+    "output": ["tip.js", "atip.js"],
+    "styleBox": true
   }
 }

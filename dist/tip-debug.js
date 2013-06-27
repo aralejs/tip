@@ -49,4 +49,5 @@ define("arale/tip/1.1.3/tip-debug", [ "arale/popup/1.1.1/popup-debug", "$-debug"
         }
     });
     module.exports = Tip;
+    module.exports.outerBoxClass = "arale-tip-1_1_3";
 });
