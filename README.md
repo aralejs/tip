@@ -39,7 +39,7 @@
 
 ![位置参数示意](https://i.alipayobjects.com/e/201303/2PUwcwzdMa.png)
 
-其他配置请参考模块 [popup](../popup/) 的配置。
+其他配置请参考父模块 [popup](../popup/) 和爷爷模块 [overlay](../overlay/) 的配置。
 
 
 ## 最佳实践
