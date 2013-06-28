@@ -9,6 +9,9 @@
 
 `tag:improved` 升级 popup 到 1.1.1
 
+`tag:improved` 添加 styleBox, 已解决样式冲突问题
+
+
 
 ## 1.1.2
 
