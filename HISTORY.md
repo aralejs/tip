@@ -17,10 +17,15 @@
 
 `tag:improved` 依赖升级到 [arale.popup@1.1.0](http://aralejs.org/popup/history.html)。
 
+`tag:fixed` [pull#5](https://github.com/aralejs/tip/pull/6) 修复当有多个trigger时，定位总是指向第一个trigger的问题。（相关代码已经在popup中实现了）
+
 
 ## 1.1.1
 
 `tag:improved` 依赖升级到 [arale.popup@1.0.2](http://aralejs.org/popup/history.html)。
+
+`tag:unsolved` 当有多个trigger时，定位总是指向第一个trigger。
+
 
 ## 1.1.0
 
