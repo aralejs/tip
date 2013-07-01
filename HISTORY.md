@@ -24,7 +24,7 @@
 
 `tag:improved` 依赖升级到 [arale.popup@1.0.2](http://aralejs.org/popup/history.html)。
 
-`tag:unsolved` 当有多个trigger时，定位总是指向第一个trigger。
+`tag:unresolved` 当有多个trigger时，定位总是指向第一个trigger。
 
 
 ## 1.1.0
