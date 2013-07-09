@@ -23,7 +23,7 @@
   "spm": {
     "alias": {
       "$": "$",
-      "popup": "arale/popup/1.1.1/popup",
+      "popup": "arale/popup/1.1.2/popup",
       "ui-poptip": "alice/poptip/1.1.1/poptip.css"
     },
     "output": ["tip.js", "atip.js"],
