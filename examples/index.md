@@ -37,7 +37,7 @@ em {
 font-style: normal;
 }
 `````
-<link rel="stylesheet" href="http://assets.spmjs.org/alice/poptip/1.0.0/poptip-debug.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="http://assets.spmjs.org/alice/poptip/1.1.1/poptip-debug.css" type="text/css" media="screen" charset="utf-8">
 <link rel="stylesheet" href="http://assets.spmjs.org/alice/tiptext/1.1.0/tiptext-debug.css" type="text/css" media="screen" charset="utf-8">
 
 ## 方向参数 direction
@@ -51,8 +51,8 @@ font-style: normal;
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-7">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content" data-role="content">
             <div>我是上方的tip ◆</div>
@@ -81,8 +81,8 @@ seajs.use(['tip'], function(Tip) {
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-11">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content" data-role="content">
             <div>我是下方的tip</div>
@@ -112,8 +112,8 @@ seajs.use(['tip'], function(Tip) {
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-10">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content" data-role="content">
             <div>我是右方的tip</div>
@@ -143,8 +143,8 @@ seajs.use(['tip'], function(Tip) {
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-2">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content" data-role="content">
             <div>我是左方的tip</div>
@@ -176,8 +176,8 @@ seajs.use(['tip'], function(Tip) {
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-11">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content" data-role="content">
             <div>我是下方的tip</div>
@@ -208,8 +208,8 @@ seajs.use(['tip'], function(Tip) {
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-11">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content" data-role="content">
             <div>我是下方的tip</div>
@@ -243,8 +243,8 @@ seajs.use(['tip'], function(Tip) {
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-7">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content" data-role="content">
             <div>我是上方的tip ◆</div>
@@ -281,8 +281,8 @@ seajs.use(['tip'], function(Tip) {
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-7">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content" data-role="content">
             <div>我是上方的tip ◆</div>
@@ -316,8 +316,8 @@ seajs.use(['tip'], function(Tip) {
 <div class="examples">
 <div class="ui-tiptext-container ui-tiptext-container-message fn-hide" id="poptip5">
     <div class="ui-tiptext-arrow ui-tiptext-arrowup">
-        <em>◆</em>
-        <span>◆</span>
+        <em></em>
+        <span></span>
     </div>
     <p class="ui-tiptext ui-tiptext-message">
         <i class="ui-tiptext-icon iconfont" title="提示">&#xF046;</i>
@@ -347,8 +347,8 @@ seajs.use(['tip'], function(Tip) {
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-7">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content" data-role="content">
             <div>我是淡出的tip ◆</div>
@@ -376,8 +376,8 @@ seajs.use(['tip'], function(Tip) {
     <div class="ui-poptip-shadow">
     <div class="ui-poptip-container">
         <div class="ui-poptip-arrow ui-poptip-arrow-11">
-            <em>◆</em>
-            <span>◆</span>
+            <em></em>
+            <span></span>
         </div>
         <div class="ui-poptip-content" data-role="content">
             <div>我是滑出的tip ◆</div>
