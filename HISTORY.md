@@ -4,6 +4,8 @@
 
 ## 1.1.4
 
+`tag:improved` 升级 popup 到 1.1.2
+
 `tag:improved` 升级 atip 依赖的默认样式 alice/poptip 到 1.1.1 ，相应修改了默认模板。
 
 
