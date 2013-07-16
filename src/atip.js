@@ -37,6 +37,12 @@ define(function(require, exports, module) {
 
         setup: function() {
             this._originArrowPosition = this.get('arrowPosition');
+            // 设置位置，避免滚动条闪动
+            this.element.css({
+                position: "absolute",
+                top: 0,
+                left: 0
+            });
             Atip.superclass.setup.call(this);
         },
 
