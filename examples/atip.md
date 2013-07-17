@@ -105,6 +105,10 @@ seajs.use(['atip'], function(Atip) {
 });
 ````
 
+### inViewport 属性
+
+当屏幕空间不够时，自动转换箭头位置。
+
 <div class="cell">
     <p id="test8">本来是7点钟的Tip，但位置太靠上了就会变成11点的Tip</p>
 </div>
