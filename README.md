@@ -57,7 +57,7 @@ seajs.use(['arale/tip/{{版本号}}/tip'], function(Tip) {
 
 Tip 组件不和具体结构依赖，可以自由和各种 dom 结构进行搭配，需要在页面上自己写 html （或者传模板参数）。若想直接使用带箭头的Tip，可以试试 [Atip](http://aralejs.org/tip/docs/atip.html)。
 
-Tip 组件推荐和 [ui-poptip](https://a.alipayobjects.com/al/alice.components.ui-poptip-1.3-src.css8) 或 [ui-tiptext](https://a.alipayobjects.com/al/alice.components.ui-tiptext-1.1-src.css) 等 Tip 样式配合使用，用`direction`属性来控制提示框出现的位置，用`arrowShift`属性来调节箭头的偏移。
+Tip 组件推荐和 [poptip](http://aliceui.org/poptip/) 等 Tip 样式配合使用，用`direction`属性来控制提示框出现的位置，用`arrowShift`属性来调节箭头的偏移。
 
 下面是一个完整的应用示例。
 

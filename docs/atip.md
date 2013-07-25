@@ -42,8 +42,6 @@ Atip 是气泡提示弹出组件，它简化和封装了 Tip 组件，拥有一�
 
 ## 最佳实践
 
-本组件须和 [alice.components.ui-poptip](https://a.alipayobjects.com/al/alice.components.ui-poptip-1.3-src.css) 配合使用。
-
 ```javascript
 seajs.use(['arale/tip/{{版本号}}/atip'], function(Atip) {
     new Atip({
@@ -53,5 +51,3 @@ seajs.use(['arale/tip/{{版本号}}/atip'], function(Atip) {
         theme: 'blue'
     });
 });
-```
-
