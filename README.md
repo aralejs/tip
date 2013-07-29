@@ -11,6 +11,14 @@
 
 ## 配置说明
 
+### trigger `element|string` 
+
+触发点元素。
+
+### triggerType `string`
+
+触发方式，[ hover | click ]。
+
 ### content `string|function`
 
 提示内容，使用 `data-role="content"` 标示内容节点。
