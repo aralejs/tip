@@ -175,7 +175,8 @@ define(function(require) {
                 content: CONTENT
             });
             atip.show();
-            expect(atip.element.css('color')).to.be('rgb(219, 124, 34)');            
+            var color = atip.element.css('color');
+            expect(color == 'rgb(219, 124, 34)' || color == '#db7c22').to.be(true);
         });
 
         it('themes', function() {
