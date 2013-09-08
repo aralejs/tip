@@ -2,6 +2,13 @@
 
 ---
 
+## 1.2.0
+
+`tag:changed` 去掉 tip 模块，用原来的 atip 代替 tip 模块。
+
+`tag:improved` 升级 popup 到 1.1.5
+
+
 ## 1.1.4
 
 `tag:improved` 升级 popup 到 1.1.2

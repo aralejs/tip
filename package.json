@@ -1,9 +1,10 @@
 {
   "name": "tip",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "family": "arale",
   "keywords": [
-    "widget"
+    "widget",
+    "bubble"
   ],
   "description": "基础提示框组件，用于带箭头的 hover 提示框显示和隐藏。",
   "homepage": "http://aralejs.org/tip",
@@ -23,10 +24,10 @@
   "spm": {
     "alias": {
       "$": "$",
-      "popup": "arale/popup/1.1.2/popup",
+      "popup": "arale/popup/1.1.5/popup",
       "ui-poptip": "alice/poptip/1.1.1/poptip.css"
     },
-    "output": ["tip.js", "atip.js"],
+    "output": ["tip.js"],
     "styleBox": true
   }
 }
