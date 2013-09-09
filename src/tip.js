@@ -64,15 +64,18 @@ define(function(require, exports, module) {
                     '7': 11,
                     '11': 7
                 };
-            // tip 溢出屏幕下方
+
             if ((ap == 11 || ap == 1) &&
                 (triggerTop + triggerHeight > scrollTop + viewportHeight - elemHeight)) {
+                // tip 溢出屏幕下方
                 this.set('arrowPosition', arrowMap[ap]);
-            }
-            // tip 溢出屏幕上方
-            else if ((ap == 7 || ap == 5) &&
+            } else if ((ap == 7 || ap == 5) &&
                      (triggerTop < scrollTop + elemHeight)) {
+                // tip 溢出屏幕上方
                 this.set('arrowPosition', arrowMap[ap]);
+            } else {
+                // 复原
+                this.set('arrowPosition', this._originArrowPosition);
             }
         },
 

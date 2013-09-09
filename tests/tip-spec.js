@@ -123,6 +123,13 @@ define(function(require) {
             expect(tip.get('arrowPosition')).to.be(7);
             tip.show();
             expect(tip.get('arrowPosition')).to.be(11);
+            tip.hide();
+            trigger.css({
+                top: 'auto',
+                bottom: 0
+            });
+            tip.show();
+            expect(tip.get('arrowPosition')).to.be(7);
             trigger.css({
                 position: null,
                 top: null,
@@ -146,6 +153,13 @@ define(function(require) {
             expect(tip.get('arrowPosition')).to.be(1);
             tip.show();
             expect(tip.get('arrowPosition')).to.be(5);
+            tip.hide();
+            trigger.css({
+                top: 0,
+                bottom: 'auto'
+            });
+            tip.show();
+            expect(tip.get('arrowPosition')).to.be(1);
             trigger.css({
                 position: null,
                 top: null,
