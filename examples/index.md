@@ -126,7 +126,7 @@ seajs.use(['tip'], function(Tip) {
 当屏幕空间不够时，自动转换箭头位置。
 
 <div class="cell">
-    <p id="test8">本来是7点钟的Tip，但位置太靠上了就会变成11点的Tip</p>
+    <p id="test8">本来是7点钟的Tip，屏幕空间不够时会变成11点的Tip</p>
 </div>
 
 ````javascript
@@ -144,7 +144,7 @@ seajs.use(['tip'], function(Tip) {
 ````
 
 <div class="cell">
-    <p id="test9">本来是1点钟的Tip，但位置太靠下了就会变成5点的Tip</p>
+    <p id="test9">本来是1点钟的Tip，屏幕空间不够时会变成5点的Tip</p>
 </div>
 
 ````javascript
