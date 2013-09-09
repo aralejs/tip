@@ -1,400 +1,217 @@
-# Tip 演示
-
-- order: 1
+# Tip 演示文档
 
 ---
 
-这里的 Tip 需要自己写 dom 结构在页面上，并自行引用相应的样式。
-
----
-
-`````css
-#content .poptip {
-font:12px/1.5 arial;
-}
-#content .cell {
-overflow:hidden;
-zoom:1;
-}
-#content .cell p {
-float:left;
-padding:10px;
-margin: 0;
-border: 2px solid #e80;
-background: #eee;
-overflow:hidden;
-}
-.fn-hide {
-display:none;
-}
-.ui-tiptext-container * {
-font-size:12px;
-margin:0;
-padding:0;
-line-height:1.5;
-}
-em {
-font-style: normal;
-}
-`````
-<link rel="stylesheet" href="http://assets.spmjs.org/alice/poptip/1.1.1/poptip-debug.css" type="text/css" media="screen" charset="utf-8">
-<link rel="stylesheet" href="http://assets.spmjs.org/alice/tiptext/1.1.0/tiptext-debug.css" type="text/css" media="screen" charset="utf-8">
-
-## 方向参数 direction
+### 箭头位置
 
 <div class="cell">
-    <p id="test1">鼠标移上来试试(上)</p>
-</div>
-
-<div class="examples">
-<div class="ui-poptip fn-hide" id="poptip1">
-    <div class="ui-poptip-shadow">
-    <div class="ui-poptip-container">
-        <div class="ui-poptip-arrow ui-poptip-arrow-7">
-            <em></em>
-            <span></span>
-        </div>
-        <div class="ui-poptip-content" data-role="content">
-            <div>我是上方的tip ◆</div>
-            <div>我是上方的tip ◆</div>
-        </div>
-    </div>
-    </div>
-</div>
+    <p id="test">10点钟位置</p>
 </div>
 
 ````javascript
 seajs.use(['tip'], function(Tip) {
-    new Tip({
-        element: '#poptip1',    
-        trigger: '#test1'
+    var t = new Tip({
+        trigger: '#test',
+        content: '<div style="padding:10px">我是内容 我是内容</div>',
+        arrowPosition: 10
     });
 });
 ````
 
 <div class="cell">
-    <p id="test2">鼠标移上来试试(下)</p>
-</div>
-
-<div class="examples">
-<div class="ui-poptip fn-hide" id="poptip2">
-    <div class="ui-poptip-shadow">
-    <div class="ui-poptip-container">
-        <div class="ui-poptip-arrow ui-poptip-arrow-11">
-            <em></em>
-            <span></span>
-        </div>
-        <div class="ui-poptip-content" data-role="content">
-            <div>我是下方的tip</div>
-            <div>我是下方的tip</div>
-        </div>
-    </div>
-    </div>
-</div>
+    <p id="test2">11点钟位置</p>
 </div>
 
 ````javascript
 seajs.use(['tip'], function(Tip) {
-    new Tip({
-        element: '#poptip2',
+    var t = new Tip({
         trigger: '#test2',
-        direction: 'down'
-    }).set('content', '我是下方的tip(改动内容了)');
+        content: '<div style="padding:10px">我是内容 我是内容</div>',
+        theme: 'white',
+        arrowPosition: 11
+    });
 });
 ````
 
 <div class="cell">
-    <p id="test3">鼠标移上来试试(右)</p>
-</div>
-
-<div class="examples">
-<div class="ui-poptip fn-hide" id="poptip3">
-    <div class="ui-poptip-shadow">
-    <div class="ui-poptip-container">
-        <div class="ui-poptip-arrow ui-poptip-arrow-10">
-            <em></em>
-            <span></span>
-        </div>
-        <div class="ui-poptip-content" data-role="content">
-            <div>我是右方的tip</div>
-            <div>我是右方的tip</div>
-        </div>
-    </div>
-    </div>
-</div>
+    <p id="test3">1点钟位置</p>
 </div>
 
 ````javascript
 seajs.use(['tip'], function(Tip) {
-    new Tip({
-        element: '#poptip3',
+    var t = new Tip({
         trigger: '#test3',
-        direction: 'right'
+        content: '<div style="padding:10px">我是内容 我是内容</div>',
+        arrowPosition: 1
     });
 });
 ````
 
 <div class="cell">
-    <p id="test4">鼠标移上来试试(左)</p>
-</div>
-
-<div class="examples">
-<div class="ui-poptip fn-hide" id="poptip4">
-    <div class="ui-poptip-shadow">
-    <div class="ui-poptip-container">
-        <div class="ui-poptip-arrow ui-poptip-arrow-2">
-            <em></em>
-            <span></span>
-        </div>
-        <div class="ui-poptip-content" data-role="content">
-            <div>我是左方的tip</div>
-            <div>我是左方的tip</div>
-        </div>
-    </div>
-    </div>
-</div>
+    <p id="test4">2点钟位置</p>
 </div>
 
 ````javascript
 seajs.use(['tip'], function(Tip) {
-    new Tip({
-        element: '#poptip4',
+    var t = new Tip({
         trigger: '#test4',
-        direction: 'left'
+        content: '<div style="padding:10px">我是内容 我是内容</div>',
+        arrowPosition: 2
     });
 });
 ````
-
-## 调节位置
 
 <div class="cell">
-    <p id="test6">不指向 trigger 的中心</p>
-</div>
-
-<div class="examples">
-<div class="ui-poptip fn-hide" id="poptip6">
-    <div class="ui-poptip-shadow">
-    <div class="ui-poptip-container">
-        <div class="ui-poptip-arrow ui-poptip-arrow-11">
-            <em></em>
-            <span></span>
-        </div>
-        <div class="ui-poptip-content" data-role="content">
-            <div>我是下方的tip</div>
-            <div>我是下方的tip</div>
-        </div>
-    </div>
-    </div>
-</div>
+    <p id="test5">5点钟位置</p>
 </div>
 
 ````javascript
 seajs.use(['tip'], function(Tip) {
-    new Tip({
-        element: '#poptip6',
-        trigger: '#test6',
-        direction: 'down',
-        distance: 20,   // 距离 trigger 20像素
-        pointPos: 0     // 指向trigger的最左边
-    });
-});
-````
-<div class="cell">
-    <p id="test6-1">指向 trigger 的尾巴</p>
-</div>
-
-<div class="examples">
-<div class="ui-poptip fn-hide" id="poptip6-1">
-    <div class="ui-poptip-shadow">
-    <div class="ui-poptip-container">
-        <div class="ui-poptip-arrow ui-poptip-arrow-11">
-            <em></em>
-            <span></span>
-        </div>
-        <div class="ui-poptip-content" data-role="content">
-            <div>我是下方的tip</div>
-            <div>我是下方的tip</div>
-        </div>
-    </div>
-    </div>
-</div>
-</div>
-
-````javascript
-seajs.use(['tip'], function(Tip) {
-    new Tip({
-        element: '#poptip6-1',
-        trigger: '#test6-1',
-        direction: 'down',
-        pointPos: '100%'     // 指向trigger的最右边
-    });
-});
-````
-
-
-## 触发方式 triggerType
-
-<div class="cell">
-    <p id="test9">点击打开Tip</p>
-</div>
-
-<div class="examples">
-<div class="ui-poptip fn-hide" id="poptip9">
-    <div class="ui-poptip-shadow">
-    <div class="ui-poptip-container">
-        <div class="ui-poptip-arrow ui-poptip-arrow-7">
-            <em></em>
-            <span></span>
-        </div>
-        <div class="ui-poptip-content" data-role="content">
-            <div>我是上方的tip ◆</div>
-            <div>我是上方的tip ◆</div>
-        </div>
-    </div>
-    </div>
-</div>
-</div>
-
-````javascript
-seajs.use(['tip'], function(Tip) {
-    new Tip({
-        element: '#poptip9',
-        trigger: '#test9',
-        triggerType: 'click',
-        direction: 'up'
-    });
-});
-````
-
-
-### 多个 trigger
-
-<p id="example6" class="cell">
-    <button data-id="10015">图片1</button>
-    <button data-id="10016">图片2</button>
-    <button data-id="10053">图片3</button>
-    <button data-id="10075">图片4</button>
-</p>
-
-<div class="examples">
-<div class="ui-poptip fn-hide" id="poptip19">
-    <div class="ui-poptip-shadow">
-    <div class="ui-poptip-container">
-        <div class="ui-poptip-arrow ui-poptip-arrow-7">
-            <em></em>
-            <span></span>
-        </div>
-        <div class="ui-poptip-content" data-role="content">
-            <div>我是上方的tip ◆</div>
-            <div>我是上方的tip ◆</div>
-        </div>
-    </div>
-    </div>
-</div>
-</div>
-
-````javascript
-seajs.use(['tip'], function(Tip) {
-    new Tip({
-        trigger: '#example6 button',
-        element: '#poptip19',
-        direction: 'up'
-    }).before('show',function() {
-        var img = '<img style="width: 58px;height:58px;" src="https://i.alipayobjects.com/combo.jpg?d=apps/58&t='+ this.activeTrigger.attr('data-id') + '" />';
-        this.set('content', img);
-    });
-});
-````
-
-
-## 更换下样式和模板
-
-<div class="cell">
-    <p id="test5">其他样式的tip</p>
-</div>
-
-<div class="examples">
-<div class="ui-tiptext-container ui-tiptext-container-message fn-hide" id="poptip5">
-    <div class="ui-tiptext-arrow ui-tiptext-arrowup">
-        <em></em>
-        <span></span>
-    </div>
-    <p class="ui-tiptext ui-tiptext-message">
-        <i class="ui-tiptext-icon iconfont" title="提示">&#xF046;</i>
-        此服务支付宝不收取任何费用。
-    </p>
-</div>
-</div>
-
-````javascript
-seajs.use(['tip'], function(Tip) {
-    new Tip({
-        element: '#poptip5',
+    var t = new Tip({
         trigger: '#test5',
-        direction: 'down',
-        arrowShift: 40  // 相应调节下箭头距离左边的距离
+        content: '<div style="padding:10px">我是内容 我是内容</div>',
+        arrowPosition: 5
     });
 });
 ````
 
-## 动画效果 effect
-
 <div class="cell">
-    <p id="test7">淡出Tip</p>
-</div>
-
-<div class="ui-poptip fn-hide" id="poptip7">
-    <div class="ui-poptip-shadow">
-    <div class="ui-poptip-container">
-        <div class="ui-poptip-arrow ui-poptip-arrow-7">
-            <em></em>
-            <span></span>
-        </div>
-        <div class="ui-poptip-content" data-role="content">
-            <div>我是淡出的tip ◆</div>
-            <div>我是淡出的tip ◆</div>
-        </div>
-    </div>
-    </div>
+    <p id="test6">7点钟位置，更改内容</p>
 </div>
 
 ````javascript
 seajs.use(['tip'], function(Tip) {
+    var t = new Tip({
+        trigger: '#test6',
+        content: '<div style="padding:10px">我是内容 我是内容</div>',
+        theme: 'blue',
+        arrowPosition: 7
+    });
+    t.set('content', '更改后的内容');
+});
+````
+
+### 动画效果
+
+<div class="cell">
+    <p id="test7-1">淡入淡出</p>
+</div>
+
+````js
+seajs.use(['tip'], function(Tip) {
     new Tip({
-        element: '#poptip7',    
-        trigger: '#test7',
+        trigger: '#test7-1',
         effect: 'fade'
     });
 });
 ````
 
 <div class="cell">
-    <p id="test8">滑出Tip</p>
+    <p id="test7-2">下拉动画</p>
 </div>
 
-<div class="ui-poptip fn-hide" id="poptip8">
-    <div class="ui-poptip-shadow">
-    <div class="ui-poptip-container">
-        <div class="ui-poptip-arrow ui-poptip-arrow-11">
-            <em></em>
-            <span></span>
-        </div>
-        <div class="ui-poptip-content" data-role="content">
-            <div>我是滑出的tip ◆</div>
-            <div>我是滑出的tip ◆</div>
-        </div>
-    </div>
-    </div>
-</div>
-
-````javascript
+````js
 seajs.use(['tip'], function(Tip) {
     new Tip({
-        element: '#poptip8',
-        trigger: '#test8',
-        direction: 'down',
+        trigger: '#test7-2',
         effect: 'slide',
+        arrowPosition: 11,
         duration: 100
     });
 });
 ````
+
+### inViewport 属性
+
+当屏幕空间不够时，自动转换箭头位置。
+
+<div class="cell">
+    <p id="test8">本来是7点钟的Tip，但位置太靠上了就会变成11点的Tip</p>
+</div>
+
+````javascript
+seajs.use(['tip'], function(Tip) {
+    var t = new Tip({
+        trigger: '#test8',
+        height: 100,
+        width: 200,
+        content: '<div>比较高的内容</div>',
+        theme: 'white',
+        inViewport: true,
+        arrowPosition: 7
+    });
+});
+````
+
+<div class="cell">
+    <p id="test9">本来是1点钟的Tip，但位置太靠下了就会变成5点的Tip</p>
+</div>
+
+````javascript
+seajs.use(['tip'], function(Tip) {
+    var t = new Tip({
+        trigger: '#test9',
+        height: 100,
+        width: 200,
+        content: '<div>比较高的内容</div>',
+        theme: 'white',
+        inViewport: true,
+        arrowPosition: 1
+    });
+});
+````
+
+### 提示框主题
+
+<div class="cell">
+    <p id="test10">蓝色提示框</p>
+</div>
+
+````javascript
+seajs.use(['tip'], function(Tip) {
+    var t = new Tip({
+        trigger: '#test10',
+        content: '<div style="padding:10px">我是内容 我是内容</div>',
+        theme: 'blue'
+    });
+});
+````
+
+### 自定义位置
+
+<div class="cell">
+    <p id="test11">进行适当的偏移</p>
+</div>
+
+````javascript
+seajs.use(['tip'], function(Tip) {
+    var t = new Tip({
+        trigger: '#test11',
+        content: '<div style="padding:10px">我是内容 我是内容</div>',
+        align: {
+            baseXY: [0, 0],
+            selfXY: [0, '100%+8px']
+        }
+    });
+});
+````
+
+
+<style>
+.cell {
+    overflow:hidden;
+    margin-bottom:20px;
+    zoom:1;
+}
+.cell p {
+    float:left;
+    padding:10px;
+    background-color:#FFCB88;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow:hidden;
+}
+.cell p:hover {
+    background-color:#FFB556;
+}
+</style>

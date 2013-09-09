@@ -30,7 +30,7 @@ Atip 是气泡提示弹出组件，它简化和封装了 Tip 组件，拥有一�
 
 箭头位置，按钟表点位置，目前支持1、2、5、7、10、11点位置，默认 7 点钟。
 
-![](https://i.alipayobjects.com/e/201307/jBty06lQT.png)
+![图示](https://i.alipayobjects.com/e/201307/jBty06lQT.png)
 
 ### theme `string`
 
