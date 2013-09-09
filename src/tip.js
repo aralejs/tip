@@ -56,19 +56,22 @@ define(function(require, exports, module) {
                 scrollTop = $(window).scrollTop(),
                 viewportHeight = $(window).outerHeight(),
                 elemHeight = this.element.height() + this.get('distance'),
-                triggerTop = $(this.get('trigger')).offset().top,
+                triggerTop = this.get('trigger').offset().top,
+                triggerHeight = this.get('trigger').height(),
                 arrowMap = {
                     '1': 5,
                     '5': 1,
                     '7': 11,
                     '11': 7
                 };
+            // tip 溢出屏幕下方
             if ((ap == 11 || ap == 1) &&
-                (triggerTop > scrollTop + viewportHeight - elemHeight)) {
+                (triggerTop + triggerHeight > scrollTop + viewportHeight - elemHeight)) {
                 this.set('arrowPosition', arrowMap[ap]);
             }
+            // tip 溢出屏幕上方
             else if ((ap == 7 || ap == 5) &&
-                      (triggerTop < scrollTop + elemHeight)) {
+                     (triggerTop < scrollTop + elemHeight)) {
                 this.set('arrowPosition', arrowMap[ap]);
             }
             else {
