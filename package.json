@@ -6,7 +6,7 @@
     "widget",
     "bubble"
   ],
-  "description": "基础提示框组件，用于带箭头的 hover 提示框显示和隐藏。",
+  "description": "提示框组件，专注于带箭头的气泡框显示、隐藏、动画等交互功能。",
   "homepage": "http://aralejs.org/tip",
   "author": "偏右 <afc163@gmail.com>",
   "maintainers": [
