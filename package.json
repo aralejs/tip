@@ -4,7 +4,8 @@
   "family": "arale",
   "keywords": [
     "widget",
-    "bubble"
+    "bubble",
+    "popup"
   ],
   "description": "提示框组件，专注于带箭头的气泡框显示、隐藏、动画等交互功能。",
   "homepage": "http://aralejs.org/tip",
@@ -15,12 +16,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/aralejs/tip.git"
+    "url": "https://github.com/aralejs/tip"
   },
   "bugs": {
     "url": "https://github.com/aralejs/tip/issues"
   },
-  "license": "",
+  "license": "MIT",
   "spm": {
     "alias": {
       "$": "$",

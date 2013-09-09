@@ -16,13 +16,13 @@ Tip 模块继承自 [popup](http://aralejs.org/popup/)，可使用包括 [overla
 
 ## 配置说明
 
-### trigger `element|string` 
+### trigger `selector`
 
 触发点元素。
 
 ### triggerType `string`
 
-触发方式，[ hover | click ]。
+触发方式，[`hover`|`click`|`focus`]。
 
 ### content `string|function`
 
@@ -36,7 +36,7 @@ Tip 模块继承自 [popup](http://aralejs.org/popup/)，可使用包括 [overla
 
 ### theme `string`
 
-配色主题，内置黄色、蓝色和白色三种提示框样式[ yellow | blue | white ]，默认为黄色。
+配色主题，内置黄色、蓝色和白色三种提示框样式 [`yellow`|`blue`|`white`]，默认为 `yellow`。
 
 ### inViewport `boolean`
 
@@ -44,7 +44,8 @@ Tip 模块继承自 [popup](http://aralejs.org/popup/)，可使用包括 [overla
 
 ### align `object`
 
-参照 Overlay 的 [align](http://aralejs.org/overlay/#align-object) 配置，当指定此参数用于定位，`arrowPosition` 属性则失效。
+参照 Overlay 的 [align](http://aralejs.org/overlay/#align-object) 配置，
+指定此定位参数时，认为开发者要自定义提示框位置，此时 `arrowPosition` 属性失效。
 
 ---
 
