@@ -23,8 +23,11 @@ define(function(require, exports, module) {
 
             align: {
                 setter: function(val) {
-                    // 用户主动设置了 align
-                    this._specifiedAlign = (!!val);
+                    // 用户初始化时主动设置了 align
+                    // 且并非来自 arrowPosition 的设置
+                    if (val && !val.comeFromArrowPosition) {
+                        this._specifiedAlign = true;
+                    }
                     return val;
                 }
             },
@@ -55,16 +58,16 @@ define(function(require, exports, module) {
                 elemHeight = this.element.height() + this.get('distance'),
                 triggerTop = $(this.get('trigger')).offset().top,
                 arrowMap = {
-                    '1': '5',
-                    '5': '1',
-                    '7': '11',
-                    '11': '7'
+                    '1': 5,
+                    '5': 1,
+                    '7': 11,
+                    '11': 7
                 };
-            if ((ap === 11 || ap === 1) &&
+            if ((ap == 11 || ap == 1) &&
                 (triggerTop > scrollTop + viewportHeight - elemHeight)) {
                 this.set('arrowPosition', arrowMap[ap]);
             }
-            else if ((ap === 7 || ap === 5) &&
+            else if ((ap == 7 || ap == 5) &&
                       (triggerTop < scrollTop + elemHeight)) {
                 this.set('arrowPosition', arrowMap[ap]);
             }

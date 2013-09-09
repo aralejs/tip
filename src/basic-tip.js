@@ -51,6 +51,7 @@ define(function(require, exports, module) {
                 alignObject.selfXY = [0, arrowShift];
             }
 
+            alignObject.comeFromArrowPosition = true;
             this.set('align', alignObject);
         },
 
