@@ -74,9 +74,6 @@ define(function(require, exports, module) {
                      (triggerTop < scrollTop + elemHeight)) {
                 this.set('arrowPosition', arrowMap[ap]);
             }
-            else {
-                this.set('arrowPosition', this._originArrowPosition);
-            }
         },
 
         // 用于 set 属性后的界面更新

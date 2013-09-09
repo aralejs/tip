@@ -55,11 +55,6 @@ define(function(require, exports, module) {
             this.set('align', alignObject);
         },
 
-        setup: function() {
-            Tip.superclass.setup.call(this);
-            this._setAlign();
-        },
-
         // 用于 set 属性后的界面更新
 
         _onRenderContent: function(val) {

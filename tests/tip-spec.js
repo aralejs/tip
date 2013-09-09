@@ -60,6 +60,18 @@ define(function(require) {
             expect(color == 'rgb(219, 124, 34)' || color == '#db7c22').to.be(true);
         });
 
+        it('set size', function() {
+            tip = new Tip({
+                trigger: trigger,
+                content: CONTENT,
+                width: 600,
+                height: '1024px'
+            });
+            tip.show();
+            expect(tip.element.find('[data-role="content"]').width()).to.be(600);
+            expect(tip.element.find('[data-role="content"]').height()).to.be(1024);
+        });
+
         it('themes', function() {
             tip = new Tip({
                 trigger: trigger,
