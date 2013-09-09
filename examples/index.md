@@ -180,7 +180,7 @@ seajs.use(['tip'], function(Tip) {
 ### 自定义位置
 
 <div class="cell">
-    <p id="test11">进行适当的偏移</p>
+    <p id="test11">利用 align 属性设置自定义位置</p>
 </div>
 
 ````javascript

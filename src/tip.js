@@ -21,6 +21,14 @@ define(function(require, exports, module) {
             // https://i.alipayobjects.com/e/201307/jBty06lQT.png
             arrowPosition: 7,
 
+            align: {
+                setter: function(val) {
+                    // 用户主动设置了 align
+                    this._specifiedAlign = (!!val);
+                    return val;
+                }
+            },
+
             // 颜色 [yellow|blue|white]
             theme: 'yellow',
 
@@ -72,6 +80,12 @@ define(function(require, exports, module) {
             var arrow = this.$('.ui-poptip-arrow');
             arrow.removeClass('ui-poptip-arrow-' + prev)
                  .addClass('ui-poptip-arrow-' + val);
+
+            // 用户设置了 align
+            // 则直接使用 align 表示的位置信息，忽略 arrowPosition
+            if (this._specifiedAlign) {
+                return;
+            }
 
             var direction = '', arrowShift = 0;
             if (val === 10) {
