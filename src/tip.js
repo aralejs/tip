@@ -3,8 +3,8 @@ define(function(require, exports, module) {
     var $ = require('$');
     var BasicTip = require('./basic-tip');
 
-    // 依赖样式 alice.poptip
-    require('ui-poptip');
+    // 依赖样式 alice/poptip@1.1.1
+    require('./tip.css');
 
     // 气泡提示弹出组件
     // ---
