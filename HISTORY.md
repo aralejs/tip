@@ -4,7 +4,7 @@
 
 ## 1.2.0
 
-`tag:changed` 去掉 tip 模块，用 atip 替换了 tip 模块。
+`tag:changed` #8 去掉 tip 模块，用 atip 替换了 tip 模块。
 
 `tag:changed` 现在可以指定 align 参数用来自定义位置，此时 arrowPosition 失效。
 
