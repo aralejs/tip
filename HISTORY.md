@@ -8,8 +8,6 @@
 
 `tag:improved` 升级 popup 到 1.1.5
 
-`tag:improved` 增加 inViewport 配置属性
-
 
 ## 1.1.4
 
