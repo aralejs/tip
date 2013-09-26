@@ -53,16 +53,27 @@ define(function(require, exports, module) {
                 return;
             }
             var ap = this._originArrowPosition,
+                triggerOffset = this.get('trigger').offset(),
+
                 scrollTop = $(window).scrollTop(),
                 viewportHeight = $(window).outerHeight(),
                 elemHeight = this.element.height() + this.get('distance'),
-                triggerTop = this.get('trigger').offset().top,
+                triggerTop = triggerOffset.top,
                 triggerHeight = this.get('trigger').height(),
+
+                scrollLeft = $(window).scrollLeft(),
+                viewportWidth = $(window).outerWidth(),
+                elemWidth = this.element.width() + this.get("distance"),
+                triggerLeft = triggerOffset.left,
+                triggerWidth = this.get("trigger").width(),
+
                 arrowMap = {
                     '1': 5,
                     '5': 1,
                     '7': 11,
-                    '11': 7
+                    '11': 7,
+                    '2': 10,
+                    '10': 2
                 };
 
             if ((ap == 11 || ap == 1) &&
@@ -73,6 +84,12 @@ define(function(require, exports, module) {
                      (triggerTop < scrollTop + elemHeight)) {
                 // tip 溢出屏幕上方
                 this.set('arrowPosition', arrowMap[ap]);
+            } else if ((ap == 2) && triggerLeft < scrollLeft + elemWidth) {
+                // tip 溢出屏幕左方
+                this.set("arrowPosition", arrowMap[ap]);
+            } else if ((ap == 10) && triggerLeft + triggerWidth > scrollLeft + viewportWidth - elemWidth) {
+                // tip 溢出屏幕右方
+                this.set("arrowPosition", arrowMap[ap]);
             } else {
                 // 复原
                 this.set('arrowPosition', this._originArrowPosition);
