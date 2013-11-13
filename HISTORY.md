@@ -2,6 +2,10 @@
 
 ---
 
+## 1.2.1
+
+`tag:improved` 升级 tip 依赖的默认样式 alice/poptip 到 [1.2.0](http://aliceui.org/poptip/history.html)。
+
 ## 1.2.0
 
 `tag:changed` #8 去掉 tip 模块，用 atip 替换了 tip 模块。
