@@ -196,6 +196,23 @@ seajs.use(['tip'], function(Tip) {
 });
 ````
 
+### 动态 content
+
+<div class="cell">
+    <p class="test12">动态获取</p>
+    <p class="test12">trigger 的属性</p>
+</div>
+
+````javascript
+seajs.use(['tip'], function(Tip) {
+    var t = new Tip({
+        trigger: '.test12'
+    });
+    t.before('show', function() {
+        this.set('content', this.activeTrigger.html());
+    });
+});
+````
 
 <style>
 .cell {
@@ -206,6 +223,7 @@ seajs.use(['tip'], function(Tip) {
 .cell p {
     float:left;
     padding:10px;
+    margin-right: 5px;
     background-color:#FFCB88;
     border-radius: 4px;
     cursor: pointer;
@@ -215,3 +233,4 @@ seajs.use(['tip'], function(Tip) {
     background-color:#FFB556;
 }
 </style>
+

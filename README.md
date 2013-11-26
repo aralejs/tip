@@ -24,9 +24,9 @@ Tip 模块继承自 [popup](http://aralejs.org/popup/)，可使用包括 [overla
 
 触发方式，[`hover`|`click`|`focus`]。
 
-### content `string|function`
+### content `string`
 
-提示内容，使用 `data-role="content"` 标示内容节点。
+提示内容，支持字符和 html 结构。
 
 ### arrowPosition `number`
 
