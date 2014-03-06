@@ -2,6 +2,10 @@
 
 ---
 
+## 1.2.2
+
+`tag:improved` 升级 popup 到 1.1.6
+
 ## 1.2.1
 
 `tag:improved` 升级 tip 依赖的默认样式 alice/poptip 到 [1.2.0](http://aliceui.org/poptip/history.html)。

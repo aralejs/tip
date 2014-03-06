@@ -1,6 +1,6 @@
 {
   "name": "tip",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "family": "arale",
   "keywords": [
     "widget",
@@ -25,7 +25,7 @@
   "spm": {
     "alias": {
       "$": "$",
-      "popup": "arale/popup/1.1.5/popup",
+      "popup": "arale/popup/1.1.6/popup",
       "ui-poptip": "alice/poptip/1.2.0/poptip.css"
     },
     "output": ["tip.js"],
