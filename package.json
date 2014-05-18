@@ -1,7 +1,6 @@
 {
-  "name": "tip",
-  "version": "1.2.2",
-  "family": "arale",
+  "name": "arale-tip",
+  "version": "1.3.0",
   "keywords": [
     "widget",
     "bubble",
@@ -23,12 +22,20 @@
   },
   "license": "MIT",
   "spm": {
-    "alias": {
-      "$": "$",
-      "popup": "arale/popup/1.1.6/popup",
-      "ui-poptip": "alice/poptip/1.2.0/poptip.css"
+    "styleBox": true,
+    "main": "tip.js",
+    "dependencies": {
+      "jquery": "1.7.2",
+      "arale-popup": "1.2.0",
+      "alice-poptip": "1.3.0"
     },
-    "output": ["tip.js"],
-    "styleBox": true
+    "devDependencies": {
+      "expect.js": "0.3.1"
+    },
+    "engines": {
+      "seajs": "2.2.1",
+      "seajs-text": "1.1.0"
+    },
+    "buildArgs": "--ignore jquery"
   }
 }

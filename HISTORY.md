@@ -2,6 +2,10 @@
 
 ---
 
+## 1.3.0
+
+`tag:changed` 迁移到 spm@3.x
+
 ## 1.2.2
 
 `tag:improved` 升级 popup 到 1.1.6
