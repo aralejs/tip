@@ -2,6 +2,7 @@
 
 ---
 
+[![spm package](http://spmjs.io/badge/arale-tip)](http://spmjs.io/package/arale-tip)
 [![Build Status](https://secure.travis-ci.org/aralejs/tip.png)](https://travis-ci.org/aralejs/tip)
 [![Coverage Status](https://coveralls.io/repos/aralejs/tip/badge.png?branch=master)](https://coveralls.io/r/aralejs/tip)
 
