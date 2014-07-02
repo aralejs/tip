@@ -22,7 +22,6 @@
   },
   "license": "MIT",
   "spm": {
-    "styleBox": true,
     "main": "tip.js",
     "dependencies": {
       "jquery": "1.7.2",
@@ -36,6 +35,6 @@
       "seajs": "2.2.1",
       "seajs-text": "1.1.0"
     },
-    "buildArgs": "--ignore jquery"
+    "buildArgs": "--ignore jquery --styleBox"
   }
 }
