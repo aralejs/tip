@@ -3,8 +3,8 @@
 ---
 
 [![spm package](http://spmjs.io/badge/arale-tip)](http://spmjs.io/package/arale-tip)
-[![Build Status](https://secure.travis-ci.org/aralejs/tip.png)](https://travis-ci.org/aralejs/tip)
-[![Coverage Status](https://coveralls.io/repos/aralejs/tip/badge.png?branch=master)](https://coveralls.io/r/aralejs/tip)
+[![Build Status](https://img.shields.io/travis/aralejs/dialog.svg?style=flat)](https://travis-ci.org/aralejs/dialog)
+[![Coverage Status](https://img.shields.io/coveralls/aralejs/dialog.svg?style=flat)](https://coveralls.io/r/aralejs/dialog)
 
 提示框组件，专注于带箭头的气泡框显示、隐藏、动画等交互功能。
 模块内部集成了模板和样式，无须单独引用样式，可以很方便地直接使用。
