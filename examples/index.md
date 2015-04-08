@@ -9,12 +9,11 @@
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
-    var t = new Tip({
-        trigger: '#test',
-        content: '<div style="padding:10px">我是内容 我是内容</div>',
-        arrowPosition: 10
-    });
+var Tip = require('arale-tip');
+var t = new Tip({
+    trigger: '#test',
+    content: '<div style="padding:10px">我是内容 我是内容</div>',
+    arrowPosition: 10
 });
 ````
 
@@ -23,13 +22,12 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
-    var t = new Tip({
-        trigger: '#test2',
-        content: '<div style="padding:10px">我是内容 我是内容</div>',
-        theme: 'white',
-        arrowPosition: 11
-    });
+var Tip = require('arale-tip');
+var t = new Tip({
+    trigger: '#test2',
+    content: '<div style="padding:10px">我是内容 我是内容</div>',
+    theme: 'white',
+    arrowPosition: 11
 });
 ````
 
@@ -38,12 +36,11 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
-    var t = new Tip({
-        trigger: '#test3',
-        content: '<div style="padding:10px">我是内容 我是内容</div>',
-        arrowPosition: 1
-    });
+var Tip = require('arale-tip');
+var t = new Tip({
+    trigger: '#test3',
+    content: '<div style="padding:10px">我是内容 我是内容</div>',
+    arrowPosition: 1
 });
 ````
 
@@ -52,12 +49,11 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
-    var t = new Tip({
-        trigger: '#test4',
-        content: '<div style="padding:10px">我是内容 我是内容</div>',
-        arrowPosition: 2
-    });
+var Tip = require('arale-tip');
+var t = new Tip({
+    trigger: '#test4',
+    content: '<div style="padding:10px">我是内容 我是内容</div>',
+    arrowPosition: 2
 });
 ````
 
@@ -66,12 +62,11 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
-    var t = new Tip({
-        trigger: '#test5',
-        content: '<div style="padding:10px">我是内容 我是内容</div>',
-        arrowPosition: 5
-    });
+var Tip = require('arale-tip');
+var t = new Tip({
+    trigger: '#test5',
+    content: '<div style="padding:10px">我是内容 我是内容</div>',
+    arrowPosition: 5
 });
 ````
 
@@ -80,15 +75,14 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
-    var t = new Tip({
-        trigger: '#test6',
-        content: '<div style="padding:10px">我是内容 我是内容</div>',
-        theme: 'blue',
-        arrowPosition: 7
-    });
-    t.set('content', '更改后的内容');
+var Tip = require('arale-tip');
+var t = new Tip({
+    trigger: '#test6',
+    content: '<div style="padding:10px">我是内容 我是内容</div>',
+    theme: 'blue',
+    arrowPosition: 7
 });
+t.set('content', '更改后的内容');
 ````
 
 ### 动画效果
@@ -98,11 +92,10 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````js
-seajs.use(['tip'], function(Tip) {
-    new Tip({
-        trigger: '#test7-1',
-        effect: 'fade'
-    });
+var Tip = require('arale-tip');
+new Tip({
+    trigger: '#test7-1',
+    effect: 'fade'
 });
 ````
 
@@ -111,13 +104,12 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````js
-seajs.use(['tip'], function(Tip) {
-    new Tip({
-        trigger: '#test7-2',
-        effect: 'slide',
-        arrowPosition: 11,
-        duration: 100
-    });
+var Tip = require('arale-tip');
+new Tip({
+    trigger: '#test7-2',
+    effect: 'slide',
+    arrowPosition: 11,
+    duration: 100
 });
 ````
 
@@ -130,16 +122,15 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
-    var t = new Tip({
-        trigger: '#test8',
-        height: 100,
-        width: 200,
-        content: '<div>比较高的内容</div>',
-        theme: 'white',
-        inViewport: true,
-        arrowPosition: 7
-    });
+var Tip = require('arale-tip');
+var t = new Tip({
+    trigger: '#test8',
+    height: 100,
+    width: 200,
+    content: '<div>比较高的内容</div>',
+    theme: 'white',
+    inViewport: true,
+    arrowPosition: 7
 });
 ````
 
@@ -148,16 +139,15 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
-    var t = new Tip({
-        trigger: '#test9',
-        height: 100,
-        width: 200,
-        content: '<div>比较高的内容</div>',
-        theme: 'white',
-        inViewport: true,
-        arrowPosition: 1
-    });
+var Tip = require('arale-tip');
+var t = new Tip({
+    trigger: '#test9',
+    height: 100,
+    width: 200,
+    content: '<div>比较高的内容</div>',
+    theme: 'white',
+    inViewport: true,
+    arrowPosition: 1
 });
 ````
 
@@ -168,12 +158,11 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
-    var t = new Tip({
-        trigger: '#test10',
-        content: '<div style="padding:10px">我是内容 我是内容</div>',
-        theme: 'blue'
-    });
+var Tip = require('arale-tip');
+var t = new Tip({
+    trigger: '#test10',
+    content: '<div style="padding:10px">我是内容 我是内容</div>',
+    theme: 'blue'
 });
 ````
 
@@ -184,15 +173,14 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
-    var t = new Tip({
-        trigger: '#test11',
-        content: '<div style="padding:10px">我是内容 我是内容</div>',
-        align: {
-            baseXY: [0, 0],
-            selfXY: [0, '100%+8px']
-        }
-    });
+var Tip = require('arale-tip');
+var t = new Tip({
+    trigger: '#test11',
+    content: '<div style="padding:10px">我是内容 我是内容</div>',
+    align: {
+        baseXY: [0, 0],
+        selfXY: [0, '100%+8px']
+    }
 });
 ````
 
@@ -204,13 +192,12 @@ seajs.use(['tip'], function(Tip) {
 </div>
 
 ````javascript
-seajs.use(['tip'], function(Tip) {
-    var t = new Tip({
-        trigger: '.test12'
-    });
-    t.before('show', function() {
-        this.set('content', this.activeTrigger.html());
-    });
+var Tip = require('arale-tip');
+var t = new Tip({
+    trigger: '.test12'
+});
+t.before('show', function() {
+    this.set('content', this.activeTrigger.html());
 });
 ````
 
