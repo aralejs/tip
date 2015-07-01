@@ -22,3 +22,4 @@ sea-modules
 .cache
 dist
 spm_modules
+node_modules
