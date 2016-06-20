@@ -1,13 +1,12 @@
 {
   "name": "arale-tip",
-  "version": "1.4.1",
+  "version": "2.0.0",
   "keywords": [
     "widget",
     "bubble",
     "popup"
   ],
   "description": "提示框组件，专注于带箭头的气泡框显示、隐藏、动画等交互功能。",
-  "homepage": "http://aralejs.org/tip",
   "author": "偏右 <afc163@gmail.com>",
   "maintainers": [
     "偏右 <afc163@gmail.com>",
@@ -21,27 +20,31 @@
     "url": "https://github.com/aralejs/tip/issues"
   },
   "license": "MIT",
-  "spm": {
-    "main": "tip.js",
-    "dependencies": {
-      "jquery": "1.7.2",
-      "arale-popup": "1.2.0",
-      "alice-poptip": "1.3.0",
-      "import-style": "~1.0.0"
-    },
-    "devDependencies": {
-      "expect.js": "0.3.1"
-    },
-    "engines": {
-      "seajs": "2.2.1",
-      "seajs-text": "1.1.0"
-    },
-    "buildArgs": "--ignore jquery --styleBox"
-  },
   "scripts": {
-    "build": "spm-sea"
+    "test": "atool-test",
+    "doc": "atool-doc"
+  },
+  "spm": {
+    "build": {
+      "global": {
+        "jquery": "jQuery"
+      }
+    }
   },
   "dependencies": {
-    "spm-sea": "~1.0.1"
-  }
+    "spm-sea": "~1.0.1",
+    "jquery": "1.7.2",
+    "arale-popup": "~1.2.0",
+    "alice-poptip": "~1.3.0"
+  },
+  "main": "tip.js",
+  "devDependencies": {
+    "atool-doc": "~0.4.3",
+    "atool-test": "~0.4.3",
+    "expect.js": "0.3.1"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "publishConfig": {}
 }
