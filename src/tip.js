@@ -1,15 +1,25 @@
 var $ = require('jquery');
 var BasicTip = require('./basic-tip');
 
-// 依赖样式 alice/poptip@1.1.1
-require('./tip.css');
+require('./tip.less');
 
 // 气泡提示弹出组件
 // ---
 var Tip = BasicTip.extend({
 
   attrs: {
-    template: require('./tip.tpl'),
+    template: `<div class="ui-poptip">
+                  <div class="ui-poptip-shadow">
+                  <div class="ui-poptip-container">
+                      <div class="ui-poptip-arrow">
+                          <em></em>
+                          <span></span>
+                      </div>
+                      <div class="ui-poptip-content" data-role="content">
+                      </div>
+                  </div>
+                  </div>
+              </div>`,
 
     // 提示内容
     content: 'A TIP BOX',

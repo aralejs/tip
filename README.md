@@ -1,8 +1,6 @@
 # Tip 基础提示框
 
 ---
-
-[![spm package](http://spmjs.io/badge/arale-tip)](http://spmjs.io/package/arale-tip)
 [![Build Status](https://img.shields.io/travis/aralejs/dialog.svg?style=flat)](https://travis-ci.org/aralejs/dialog)
 [![Coverage Status](https://img.shields.io/coveralls/aralejs/dialog.svg?style=flat)](https://coveralls.io/r/aralejs/dialog)
 
@@ -53,13 +51,12 @@ Tip 模块继承自 [popup](http://aralejs.org/popup/)，可使用包括 [overla
 ## 最佳实践
 
 ```js
-seajs.use(['arale/tip/{{版本号}}/tip'], function(Tip) {
-    new Tip({
-        trigger: '#test',       // 触发器
-        content: '我是内容',    // 提示框显示的内容
-        arrowPosition: 11       // 11点钟的箭头位置
-    });
+import Tip from 'arale-tip';
+new Tip({
+    trigger: '#test',       // 触发器
+    content: '我是内容',    // 提示框显示的内容
+    arrowPosition: 11       // 11点钟的箭头位置
 });
 ```
 
-其他用法请参见[演示](http://aralejs.org/tip/examples/)。
+其他用法请参见 examples
