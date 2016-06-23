@@ -3,9 +3,8 @@ language: node_js
 node_js:
   - "4"
 
-
 before_script:
   - npm install
 
 script:
-  - atool-test
+  - npm run test
