@@ -78,8 +78,7 @@
 ```
 
 ```javascript
-import Tip from '../tip';
-import '../src/tip.less';
+import Tip from '../index';
 
 // 箭头位置
 new Tip({

@@ -1,7 +1,7 @@
 var exepct = require('expect.js');
 
-var $ = require('spm-jquery');
-var Tip = require('../src/tip');
+var $ = require('jquery');
+var Tip = require('../index');
 var tip, trigger;
 var CONTENT = '_content_';
 
